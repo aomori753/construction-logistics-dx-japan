@@ -38,7 +38,7 @@ This is not a student project. This is not a summarized collection of articles. 
 
 > **A construction site is, by definition, a logistics node.**
 
-Material procurement, delivery sequencing, on-site inventory control, crane scheduling, and subcontractor workforce coordination are all logistics operations. They simply occur without logistics technology, logistics data standards, or logistics systems thinking.
+Material procurement, delivery sequencing, on-site inventory control, heavy equipment scheduling, and subcontractor workforce coordination are all logistics operations. They simply occur without logistics technology, logistics data standards, or logistics systems thinking.
 
 The result is predictable: cost overruns, schedule slippage, safety incidents, and waste — at a scale that costs the Japanese construction industry hundreds of billions of yen annually.
 
