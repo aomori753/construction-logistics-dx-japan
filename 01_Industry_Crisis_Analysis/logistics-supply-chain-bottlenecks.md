@@ -1,3 +1,7 @@
+> **Professional Perspective:** This analysis is authored by an Operations Manager with 13 years of professional expertise in the Philippines' construction and civil engineering sectors. Having supervised over 1,000 professionals across large-scale projects, this perspective focuses on the "Receiver's End" of the supply chain—identifying how logistics volatility directly impacts site-level project management, engineering timelines, and resource orchestration in a global context.
+
+---
+
 # Logistics Supply Chain Bottlenecks
 ## 建設・物流サプライチェーンにおけるボトルネックの分析
 
@@ -14,6 +18,9 @@ Japanese construction relies on JIT delivery due to limited on-site storage in d
 ---
 
 ## 日本語訳 | Japanese Version (最高敬語)
+
+### 業務上の視点（プロフェッショナル・パースペクティブ）
+本分析は、フィリピンの建設および土木工学セクターにおいて13年の専門的経験を持つオペレーション・マネージャーによって執筆されました。大規模プロジェクトにおいて1,000名以上の専門家を統括した経験に基づき、サプライチェーンの「受け手側（現場）」の視点から、物流の変動性が現場レベルのプロジェクト管理、エンジニアリングの工程表、およびグローバルな文脈におけるリソース調整にどのような直接的影響を与えるかを特定しています。
 
 ### 1. 物流エンドポイントとしての建設現場
 すべての建設現場は、機能的に極めて複雑な「物流ノード（拠点）」でございます。通常の倉庫とは異なり、建設現場は建物の進捗に伴い荷卸しエリアが変動する「動的なフットプリント」を有しております。
