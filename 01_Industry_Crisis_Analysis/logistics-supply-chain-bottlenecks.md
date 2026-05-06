@@ -1,3 +1,12 @@
+> **⚠️ Research & Policy Compliance Disclaimer / 研究およびコンプライアンスに関する免責事項**
+> 
+>  This document is an independent research framework developed strictly for self-directed learning, professional development, and systems engineering portfolio building. It synthesizes 13 years of operational management experience in the Philippine construction sector with theoretical applications of Japanese industrial policies (such as MLIT mandates and the 2024 Problem). This analysis does not constitute official legal, policy, or engineering advice. The author makes no representations of official compliance, endorsement, or affiliation with any government agency or corporate entity in the Philippines or Japan. This work is intentionally designed to strictly respect and avoid any violations of the legal and policy frameworks of both nations.
+> 
+>  本文書は、自己研鑽、専門能力の開発、およびシステムズエンジニアリングのポートフォリオ構築を目的として独自に作成された研究フレームワークでございます。フィリピンの建設業界における13年間の運用管理経験と、日本の産業政策（国土交通省の施策や2024年問題など）の理論的応用を統合したものです。本分析は、公式な法的見解、政策提言、または技術的助言を構成するものではございません。執筆者は、フィリピンおよび日本のいかなる政府機関や企業からの公式な承認、提携、または法的な準拠を表明するものではありません。本研究は、両国の法律および政策の枠組みを厳格に尊重し、いかなる違反も回避するよう意図して設計されております。
+
+---
+
+
 > **Professional Perspective:** This analysis is authored by an Operations Manager with 13 years of professional expertise in the Philippines' construction and civil engineering sectors. Having supervised over 1,000 professionals across large-scale projects, this perspective focuses on the "Receiver's End" of the supply chain—identifying how logistics volatility directly impacts site-level project management, engineering timelines, and resource orchestration in a global context.
 
 ---
