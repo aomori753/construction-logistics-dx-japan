@@ -1,6 +1,17 @@
 # 🏗️ Construction & Logistics DX Japan
 ### A Bilingual Systems Engineering Knowledge Framework
 
+---
+
+### ⚠️ Disclaimer & Research Scope / 免責事項および研究範囲
+
+This repository represents a systems engineering framework built upon **13 years of professional operations management in the Philippines' construction sector**. Insights regarding Japanese national policies (MLIT, i-Construction) and technical standards (IPA) are the result of **current independent research and academic alignment** as the author transitions into the Japanese engineering market. While this framework applies "ground-truth" experience from large-scale Philippine projects to Japanese structural challenges, it is intended for research and development purposes only. It does not constitute official legal or policy advice.
+
+本リポジトリは、**フィリピンの建設セクターにおける13年間の実務経験とオペレーション管理能力**を基盤としたシステムズエンジニアリング・フレームワークでございます。日本の国家政策（国土交通省、i-Construction）および技術基準（IPA）に関する考察は、日本国内のエンジニアリング市場へのキャリア転換を見据えた、**現在の独立した調査研究および理論的整合性の検証結果**を反映したものでございます。フィリピンでの大規模プロジェクトで培った「現場の真実（Ground Truth）」を日本の構造的課題に適用する試みであり、あくまで研究・開発・教育目的を意図しております。公式な法的見解や政策提言を構成するものではない点をご留意ください。
+
+---
+
+
 ![Language](https://img.shields.io/badge/Language-English%20%7C%20日本語-blue)
 ![Domain](https://img.shields.io/badge/Domain-Construction%20DX%20%7C%20Logistics%20DX-orange)
 ![Standard](https://img.shields.io/badge/Aligned%20With-IPA%20%7C%20MLIT%20%7C%20i--Construction-green)
