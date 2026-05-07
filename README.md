@@ -1,13 +1,21 @@
 # 🏗️ Construction & Logistics DX Japan
 ### A Bilingual Systems Engineering Knowledge Framework
 
+> **⚠️ Global Research & Policy Compliance Disclaimer / 全体的な研究およびコンプライアンスに関する免責事項**
+> 
+> This repository represents a self-directed systems engineering framework and independent research project. It synthesizes **13 years of professional operations management experience from the Philippines** with current academic and technical research into Japanese industrial standards (MLIT i-Construction, IPA Frameworks, and the 2024 Problem). 
+> 
+> * **Purpose:** Professional development, portfolio building, and technical transition into the Japanese engineering market.
+> * **Non-Advice:** This content does NOT constitute official legal, policy, or civil engineering advice. 
+> * **Compliance:** This work is strictly designed to respect the legal and policy frameworks of both the Philippines and Japan. The author holds no official affiliation with government agencies in either nation; all insights are the result of independent synthesis and "Ground Truth" experience application.
+>
+> 本リポジトリは、自己研鑽を目的としたシステムズエンジニアリング・フレームワークおよび独立した研究プロジェクトでございます。**フィリピンにおける13年間の実務運用管理経験**と、日本の産業基準（国土交通省 i-Construction、IPA技術基準、2024年問題）に関する現在の学術的・技術的研究を統合したものです。
+> 
+> * **目的:** 専門能力の開発、ポートフォリオの構築、および日本国内のエンジニアリング市場へのキャリア転換を目的としています。
+> * **非助言:** 本内容は、公式な法的助言、政策提言、または土木工学的な助言を構成するものではございません。
+> * **コンプライアンス:** 本研究は、フィリピンおよび日本の両国の法的・政策的枠組みを厳格に尊重するよう設計されております。執筆者は両国の政府機関とは公式な提携関係になく、すべての考察は独立した研究と実務経験に基づいたものでございます。
+
 ---
-
-### ⚠️ Disclaimer & Research Scope / 免責事項および研究範囲
-
-This repository represents a systems engineering framework built upon **13 years of professional operations management in the Philippines' construction sector**. Insights regarding Japanese national policies (MLIT, i-Construction) and technical standards (IPA) are the result of **current independent research and academic alignment** as the author transitions into the Japanese engineering market. While this framework applies "ground-truth" experience from large-scale Philippine projects to Japanese structural challenges, it is intended for research and development purposes only. It does not constitute official legal or policy advice.
-
-本リポジトリは、**フィリピンの建設セクターにおける13年間の実務経験とオペレーション管理能力**を基盤としたシステムズエンジニアリング・フレームワークでございます。日本の国家政策（国土交通省、i-Construction）および技術基準（IPA）に関する考察は、日本国内のエンジニアリング市場へのキャリア転換を見据えた、**現在の独立した調査研究および理論的整合性の検証結果**を反映したものでございます。フィリピンでの大規模プロジェクトで培った「現場の真実（Ground Truth）」を日本の構造的課題に適用する試みであり、あくまで研究・開発・教育目的を意図しております。公式な法的見解や政策提言を構成するものではない点をご留意ください。
 
 ---
 
