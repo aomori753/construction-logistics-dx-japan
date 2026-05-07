@@ -1,4 +1,4 @@
-# 🏗️ Construction & Logistics DX Japan
+# Construction & Logistics DX Japan
 ## A Bilingual Systems Engineering Knowledge Framework
 
 **Jericho Ong** 
@@ -39,7 +39,6 @@
 > — **Jericho Ong**, Construction & Logistics DX Independent Researcher | Philippines × Japan 🇵🇭🇯🇵
 ---
 
-## 🌐 English
 
 ### Who Built This — and Why
 
@@ -176,7 +175,6 @@ construction-logistics-dx-japan/
 ---
 ---
 
-## 🇯🇵 日本語
 
 ### 執筆者について
 
