@@ -1,15 +1,20 @@
 # 🏗️ Construction & Logistics DX Japan
-### A Bilingual Systems Engineering Knowledge Framework
+## A Bilingual Systems Engineering Knowledge Framework
+
+**Jericho Ong** 
+**Construction & Logistics DX Independent Researcher (Japan)** **13-Year Construction PM | Python, Data, Cybersecurity | IPA × MLIT × JILS** *Exploring Physical AI, Automation, Data Analytics & Embodied Intelligence*
+
+---
 
 > **⚠️ Global Research & Policy Compliance Disclaimer / 全体的な研究およびコンプライアンスに関する免責事項**
 > 
-> This repository represents a self-directed systems engineering framework and independent research project. It synthesizes **13 years of professional operations management experience from the Philippines** with current academic and technical research into Japanese industrial standards (MLIT i-Construction, IPA Frameworks, and the 2024 Problem). 
+> This repository represents a self-directed systems engineering framework and independent research project. It synthesizes **13 years of professional operations management experience from the Philippines** with current academic and technical research into Japanese industrial standards (MLIT i-Construction, IPA Frameworks, and the 2024 Problem).
 > 
 > * **Purpose:** Professional development, portfolio building, and technical transition into the Japanese engineering market.
-> * **Non-Advice:** This content does NOT constitute official legal, policy, or civil engineering advice. 
+> * **Non-Advice:** This content does NOT constitute official legal, policy, or civil engineering advice.
 > * **Compliance:** This work is strictly designed to respect the legal and policy frameworks of both the Philippines and Japan. The author holds no official affiliation with government agencies in either nation; all insights are the result of independent synthesis and "Ground Truth" experience application.
->
-> 本リポジトリは、自己研鑽を目的としたシステムズエンジニアリング・フレームワークおよび独立した研究プロジェクトでございます。**フィリピンにおける13年間の実務運用管理経験**と、日本の産業基準（国土交通省 i-Construction、IPA技術基準、2024年問題）に関する現在の学術的・技術的研究を統合したものです。
+> 
+> 本リポジトリは、自己研鑽を目的としたシステムズエンジニアリング・フレームワークおよび独立した研究プロジェクトでございます。フィリピンにおける13年間の実務運用管理経験と、日本の産業基準（国土交通省 i-Construction、IPA技術基準、2024年問題）に関する現在の学術的・技術的研究を統合したものです。
 > 
 > * **目的:** 専門能力の開発、ポートフォリオの構築、および日本国内のエンジニアリング市場へのキャリア転換を目的としています。
 > * **非助言:** 本内容は、公式な法的助言、政策提言、または土木工学的な助言を構成するものではございません。
@@ -29,12 +34,9 @@
 
 ---
 
-> *"The construction site is the last mile of every supply chain. Until the industry treats it as such, Digital Transformation will remain incomplete."*
->
-> *「建設現場とは、あらゆるサプライチェーンにおける最終到達点である。業界がその本質を認識するまで、デジタルトランスフォーメーションは未完のままに留まるであろう。」*
->
-> — **Jericho Ong**, Construction DX Engineer | Philippines × Japan 🇵🇭🇯🇵
-
+> "The construction site is the last mile of every supply chain. Until the industry treats it as such, Digital Transformation will remain incomplete."  
+> 「建設現場とは、あらゆるサプライチェーンにおける最終到達点である。業界がその本質を認識するまで、デジタルトランスフォーメーションは未完のままに留まるであろう。」  
+> — **Jericho Ong**, Construction & Logistics DX Independent Researcher | Philippines × Japan 🇵🇭🇯🇵
 ---
 
 ## 🌐 English
