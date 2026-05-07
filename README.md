@@ -243,9 +243,9 @@ This is an open knowledge framework. Practitioners, researchers, engineers, and 
 ## 👤 Connect with the Author / 執筆者へのご連絡
 
 **Jericho Ong**
-Construction DX Engineer | IT Transition | Philippines × Japan 🇵🇭🇯🇵
+**Construction & Logistics DX Independent Researcher (Japan)** **13-Year Construction PM | Python, Data, Cybersecurity | IPA × MLIT × JILS** *Exploring Physical AI, Automation, Data Analytics & Embodied Intelligence*
 
-[![GitHub](https://img.shields.io/badge/GitHub-aomori753-181717?logo=github)](https://github.com/aomori753)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jericho%20Ong-0077B5?logo=linkedin)](https://www.linkedin.com/in/jericho-o-52b9b434a/) [![GitHub](https://img.shields.io/badge/GitHub-aomori753-181717?logo=github)](https://github.com/aomori753)
 
 ---
 
