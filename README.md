@@ -2,7 +2,7 @@
 ## A Bilingual Systems Engineering Knowledge Framework
 
 **Jericho Ong** 
-**Construction & Logistics DX Independent Researcher (Japan)** **13-Year Construction PM | Python, Data, Cybersecurity | IPA × MLIT × JILS** *Exploring Physical AI, Automation, Data Analytics & Embodied Intelligence*
+> **Construction & Logistics DX Independent Researcher (Japan)** **13-Year Construction PM | Python, Data, Cybersecurity | IPA × MLIT × JILS** *Exploring Physical AI, Automation, Data Analytics & Embodied Intelligence*
 
 ---
 
