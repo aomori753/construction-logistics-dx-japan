@@ -217,11 +217,28 @@ This is an open knowledge framework. Practitioners, researchers, engineers, and 
 
 本フレームワークはオープンな知識基盤でございます。実務家、研究者、エンジニア、および政策専門家の皆様からの学術的・技術的なご貢献を歓迎いたします。ご提案を提出される前に、CONTRIBUTING.md をご一読いただきますようお願い申し上げます。
 
+
+
 Connect with the Author / 執筆者へのご連絡
 Jericho Ong
 Construction & Logistics DX Independent Researcher (Japan)
 13-Year Construction PM | Python, Data, Cybersecurity | IPA × MLIT × JILS
 Exploring Physical AI, Automation, Data Analytics, and Embodied Intelligence
+
+
+## Disclaimer of Operational Liability / 運用上の免責事項
+
+The architectural models, IoT topologies, and JIT routing protocols discussed within this repository are theoretical frameworks designed for systems engineering research and academic discourse. The maintainer (Jericho Ong) assumes no legal, financial, or structural liability for direct, indirect, incidental, or consequential damages arising from the practical implementation of these models on active construction sites or logistics networks. 
+
+Any real-world application of this framework must be independently validated against official MLIT regulations, IPA security standards, and site-specific engineering protocols prior to deployment. The use of this repository's contents is strictly at the implementer's own risk.
+
+> 本リポジトリ内で議論されているアーキテクチャモデル、IoTトポロジー、およびJITルーティング・プロトコルは、システムズエンジニアリングの研究および学術的議論を目的として設計された理論的フレームワークでございます。管理者（翁ジェリコ）は、これらのモデルを実際の建設現場や物流ネットワークに実用的に実装したことに起因する、直接的、間接的、付随的、または結果的な損害に対して、法的、財政的、または構造的な責任を一切負いません。
+> 
+> 本フレームワークの現実世界への適用は、展開に先立ち、国土交通省（MLIT）の公式規制、IPAのセキュリティ基準、および現場固有の工学プロトコルに照らして独自に検証されなければなりません。本リポジトリの内容の使用は、厳密に実装者自身の責任において行われるものとします。
+
+---
+
+
 
 License / ライセンス
 Released under Creative Commons Zero v1.0 Universal (CC0).
