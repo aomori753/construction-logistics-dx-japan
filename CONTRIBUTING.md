@@ -143,3 +143,17 @@ The maintainer will review the submission against ground-truth operability and s
 Contributors must strictly adhere to corporate Non-Disclosure Agreements (NDAs) and Japanese data privacy laws (Act on the Protection of Personal Information). Do not submit proprietary, sensitive, or classified data, including specific operational blueprints, belonging to current or former employers. All structural models must be generalized or based on publicly available datasets.
 
 > 貢献者は、企業の機密保持契約（NDA）および日本の個人情報保護法を厳格に遵守しなければなりません。現在または過去の雇用主に属する独自のデータ、機密情報、または特定の運用設計図を含む非公開データを提出しないでください。すべての構造モデルは、一般化されているか、または公開されているデータセットに基づいている必要があります。
+
+## 7. Disclaimer of Liability and Warranty / 免責事項および保証の否認
+
+This repository and its constituent frameworks are provided strictly for research, educational, and systems engineering architectural purposes. 
+
+The maintainer (Jericho Ong) and any subsequent contributors provide this framework "as is" without warranty of any kind, either expressed or implied. The documentation contained herein does not constitute official legal, structural engineering, or regulatory compliance advice. 
+
+Implementing the architectural theories, IoT topologies, or JIT routing protocols discussed in this repository on active construction sites or logistics networks carries inherent operational risks. The maintainer assumes no liability for direct, indirect, or consequential damages—including but not limited to schedule delays, financial losses, regulatory penalties, or safety incidents—resulting from the application of this theoretical framework. Implementers must independently verify all systems against official MLIT, IPA, and Japanese legal standards prior to real-world deployment.
+
+> 本リポジトリおよびそれを構成するフレームワークは、研究、教育、およびシステムズエンジニアリングのアーキテクチャ設計を目的として厳密に提供されるものです。
+> 
+> 管理者（翁ジェリコ）および後続の貢献者は、本フレームワークを「現状有姿」で提供し、明示的または黙示的を問わず、いかなる種類の保証も行いません。本書に含まれる文書は、公式な法的助言、構造工学的助言、または規制遵守に関する助言を構成するものではございません。
+> 
+> 本リポジトリで議論されているアーキテクチャ理論、IoTトポロジー、またはJITルーティング・プロトコルを実際の建設現場や物流ネットワークに実装することには、本質的な運用上のリスクが伴います。管理者は、本理論的フレームワークの適用に起因する、直接的、間接的、または結果的な損害（工程の遅延、経済的損失、規制上の罰則、または安全上のインシデントを含みますがこれらに限定されません）について、一切の責任を負いません。実装者は、実際の展開に先立ち、すべてのシステムが国土交通省（MLIT）、情報処理推進機構（IPA）、および日本の法的基準に準拠していることを独自に検証する義務を負います。
