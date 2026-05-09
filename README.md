@@ -35,7 +35,7 @@
 
 > "The construction site is the last mile of every supply chain. Until the industry treats it as such, Digital Transformation will remain incomplete."  
 > 「建設現場とは、あらゆるサプライチェーンにおける最終到達点である。業界がその本質を認識するまで、デジタルトランスフォーメーションは未完のままに留まるであろう。」  
-> **Jericho T. Ong**, Construction & Logistics DX Independent Researcher | Philippines × Japan
+> **Jericho Ong**, Construction & Logistics DX Independent Researcher | Philippines × Japan
 
 ---
 
@@ -154,6 +154,8 @@ construction-logistics-dx-japan/
     ├── japanese-government-sources.md
     ├── recommended-research-papers.md
     └── conferences-and-events-japan.md
+
+
 Intended Audience
 DX Consultants and Solutions Architects evaluating construction and logistics technology within the Japanese market.
 
@@ -168,7 +170,7 @@ Engineers and IT Professionals evaluating career transitions into Construction D
 Recruiters and Hiring Managers assessing candidates with verified cross-domain systems expertise.
 
 執筆者の背景と動機
-執筆者の翁ジェリコ（Jericho T. Ong）は、土木・建築分野における施工管理および建設オペレーションの実務経験を13年以上有しております。これには、フィリピン国内における大規模な土木・構造プロジェクトの複数フェーズにわたる直接的な管理経験が含まれます。2014年には工業デザイン特許を取得しており、キャリアの大半を「現場の真実（グラウンド・トゥルース）」、すなわち資材調達の遅延、重機動員の失敗、そして深刻な労働力不足といった現実的課題の管理に費やしてまいりました。
+執筆者の翁ジェリコ（Jericho Ong）は、土木・建築分野における施工管理および建設オペレーションの実務経験を13年以上有しております。これには、フィリピン国内における大規模な土木・構造プロジェクトの複数フェーズにわたる直接的な管理経験が含まれます。2014年には工業デザイン特許を取得しており、キャリアの大半を「現場の真実（グラウンド・トゥルース）」、すなわち資材調達の遅延、重機動員の失敗、そして深刻な労働力不足といった現実的課題の管理に費やしてまいりました。
 
 現在は日本に在住し、建設DX、物流DX、サイバーセキュリティ、およびAIシステムを専門領域とする情報技術分野へのキャリア転換を積極的に進めております。専門資格の取得ロードマップはIPAの体系に厳格に準拠しており、基本情報技術者試験（FE）から応用情報技術者試験（AP）への進階を計画しております。長期的な目標は、今後の10年間において日本の産業競争力を決定づける中核領域である、フィジカルな現場オペレーションとデジタルインフラの交差領域において貢献することでございます。
 
