@@ -15,7 +15,7 @@ This document represents an independent research and self directed systems engin
 
 This document does not represent any government body, institution, or employer in the Philippines or Japan. It does not constitute official legal, regulatory, structural engineering, or professional advice under the jurisdiction of either nation. All referenced statistics and policy details are synthesized from primary public sources and are intended strictly for educational discourse, portfolio development, and architectural research. Readers are formally encouraged to verify all empirical data against original primary institutional sources.
 
-> 本文書は、日本において情報技術アーキテクチャ分野へのキャリア転換を積極的に進めている建設業オペレーションの専門家、翁ジェリコ（Jericho Ong）が独自に構築した研究および自己研鑽のフレームワークでございます。すべての分析は、政府刊行物、業界団体報告書、学術資料といった公開情報、およびフィリピンにおける大規模な建設プロジェクトと労働力管理に関する13年間の直接的な現場経験のみに基づいております。
+> 本文書は、日本において情報技術アーキテクチャ分野へのキャリア転換を積極的に進めている建設業オペレーションの専門家、ジェリコオング（Jericho Ong）が独自に構築した研究および自己研鑽のフレームワークでございます。すべての分析は、政府刊行物、業界団体報告書、学術資料といった公開情報、およびフィリピンにおける大規模な建設プロジェクトと労働力管理に関する13年間の直接的な現場経験のみに基づいております。
 > 
 > 本文書は、フィリピンおよび日本のいかなる政府機関、規制機関、企業雇用主をも代表するものではございません。さらに、両国の管轄下における公式な法的、規制的、構造工学的、または専門的な助言を構成するものでもございません。参照されているすべての統計および政策の詳細は、一次公開情報から統合されたものであり、厳密に教育的議論、ポートフォリオ構築、およびアーキテクチャ研究を目的としております。読者の皆様におかれましては、すべての実証データを一次機関の公式資料にてご確認いただくことを正式にお勧めいたします。
 
