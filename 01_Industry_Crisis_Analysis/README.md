@@ -12,11 +12,11 @@
 
 > **Global Research and Policy Compliance Disclaimer / 全体的な研究およびコンプライアンスに関する免責事項**
 > 
-> This module represents an independent research and self-development framework authored by Jericho T. Ong, a construction operations professional actively transitioning into information technology architecture within Japan. All analyses draw exclusively from publicly available government publications, industry association reports, academic literature, and 13 years of direct operational field experience managing large-scale civil projects in the Philippines. 
+> This module represents an independent research and self-development framework authored by Jericho Ong, a construction operations professional actively transitioning into information technology architecture within Japan. All analyses draw exclusively from publicly available government publications, industry association reports, academic literature, and 13 years of direct operational field experience managing large-scale civil projects in the Philippines. 
 > 
 > This documentation does not represent any government body, regulatory institution, or corporate employer in the Philippines or Japan. Furthermore, it does not constitute official legal, regulatory, structural engineering, or professional advice under the jurisdiction of either nation. All referenced statistics and policy details are synthesized from primary public sources and are intended strictly for educational discourse, portfolio development, and systems engineering research.
 > 
-> 本モジュールは、日本国内において情報技術アーキテクチャ分野へのキャリア転換を積極的に進めている建設業オペレーションの専門家、翁ジェリコ（Jericho T. Ong）が独自に構築した研究および自己研鑽のフレームワークでございます。すべての分析は、政府刊行物、業界団体報告書、学術文献といった公開情報、およびフィリピンにおける大規模土木プロジェクトの管理に関する13年間の直接的な現場経験にのみ基づいております。
+> 本モジュールは、日本国内において情報技術アーキテクチャ分野へのキャリア転換を積極的に進めている建設業オペレーションの専門家、ジェリコオング（Jericho Ong）が独自に構築した研究および自己研鑽のフレームワークでございます。すべての分析は、政府刊行物、業界団体報告書、学術文献といった公開情報、およびフィリピンにおける大規模土木プロジェクトの管理に関する13年間の直接的な現場経験にのみ基づいております。
 > 
 > 本文書は、フィリピンおよび日本のいかなる政府機関、規制機関、または企業雇用主を代表するものではございません。さらに、両国の管轄下における公式な法的、規制的、構造工学的、または専門的な助言を構成するものでもございません。参照されているすべての統計および政策の詳細は、一次公開情報から統合されたものであり、厳密に教育的議論、ポートフォリオ構築、およびシステムズエンジニアリング研究を目的としております。
 
@@ -123,7 +123,7 @@ Each constituent document contributes vital data to a master list of system requ
 
 ---
 
-**Author / 執筆者:** **Jericho T. Ong**
+**Author / 執筆者:** **Jericho Ong**
 *Construction & Logistics DX Independent Researcher (Japan)*
 *13-Year Construction Operations PM | Python, Data, Cybersecurity | IPA × MLIT × JILS*
 *Exploring Physical AI, Automation, Data Analytics & Embodied Intelligence*
