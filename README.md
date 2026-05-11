@@ -1,13 +1,28 @@
-# Construction & Logistics DX Japan
+<div align="center">
+
+# 🏗️ Construction & Logistics DX Japan
 ## A Bilingual Systems Engineering Knowledge Framework
 
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=2000&color=38bdae&background=0D111700&center=true&vCenter=true&width=800&height=50&lines=INITIALIZING_MASTER_FRAMEWORK...;BRIDGING_PHYSICAL_GROUND_TRUTH_WITH_IT_ARCHITECTURE...;RESOLVING_JAPAN'S_2024_PROBLEM..." alt="System Initialization" />
+
 **Jericho Ong**
-> **Construction & Logistics DX Independent Researcher (Japan)**
-> **13-Year Construction PM | Python, Data, Cybersecurity | IPA × MLIT × JILS**
-> *Exploring Physical AI, Automation, Data Analytics, and Embodied Intelligence*
+*Construction & Logistics DX Independent Researcher (Japan)*
+13-Year Construction PM | Python, Data, Cybersecurity | IPA × MLIT × JILS
+Exploring Physical AI, Automation, Data Analytics, and Embodied Intelligence
 
----
+<br>
 
+![Language](https://img.shields.io/badge/Language-English%20%7C%20日本語-blue)
+![Domain](https://img.shields.io/badge/Domain-Construction%20DX%20%7C%20Logistics%20DX-orange)
+![Standard](https://img.shields.io/badge/Aligned%20With-IPA%20%7C%20MLIT%20%7C%20i--Construction-green)
+![License](https://img.shields.io/badge/License-CC0%201.0%20Universal-lightgrey)
+![Status](https://img.shields.io/badge/Status-Active%20%7C%20Living%20Document-brightgreen)
+
+</div>
+
+***
+
+> [!IMPORTANT]
 > **Global Research and Policy Compliance Disclaimer / 全体的な研究およびコンプライアンスに関する免責事項**
 > 
 > This repository represents a self-directed systems engineering framework and independent research project. It synthesizes 13 years of professional operations management experience from the Philippines with current academic and technical research into Japanese industrial standards, specifically MLIT i-Construction, IPA Frameworks, and the 2024 Problem.
@@ -22,77 +37,92 @@
 > * **非助言:** 本内容は、公式な法的助言、政策提言、または土木工学的な助言を構成するものではございません。
 > * **コンプライアンス:** 本研究は、フィリピンおよび日本の両国の法的・政策的枠組みを厳格に尊重するよう設計されております。執筆者は両国の政府機関とは公式な提携関係になく、すべての考察は独立した研究と実務経験に基づいたものでございます。
 
----
+***
 
-![Language](https://img.shields.io/badge/Language-English%20%7C%20日本語-blue)
-![Domain](https://img.shields.io/badge/Domain-Construction%20DX%20%7C%20Logistics%20DX-orange)
-![Standard](https://img.shields.io/badge/Aligned%20With-IPA%20%7C%20MLIT%20%7C%20i--Construction-green)
-![License](https://img.shields.io/badge/License-CC0%201.0%20Universal-lightgrey)
-![Status](https://img.shields.io/badge/Status-Active%20%7C%20Living%20Document-brightgreen)
-![Author](https://img.shields.io/badge/Author-Jericho%20Ong-informational)
+<div align="center">
+  
+> *"The construction site is the last mile of every supply chain. Until the industry treats it as such, Digital Transformation will remain incomplete."*
+> 
+> 「建設現場とは、あらゆるサプライチェーンにおける最終到達点である。業界がその本質を認識するまで、デジタルトランスフォーメーションは未完のままに留まるであろう。」
+> 
+> **Jericho Ong**, Construction & Logistics DX Independent Researcher
 
----
+</div>
 
-> "The construction site is the last mile of every supply chain. Until the industry treats it as such, Digital Transformation will remain incomplete."  
-> 「建設現場とは、あらゆるサプライチェーンにおける最終到達点である。業界がその本質を認識するまで、デジタルトランスフォーメーションは未完のままに留まるであろう。」  
-> **Jericho Ong**, Construction & Logistics DX Independent Researcher | Philippines × Japan
+***
 
----
-
-### Author Background and Motivation
+## 1. Author Background and Motivation / 執筆者の背景と動機
 
 The author, Jericho Ong, is a construction operations and project management professional possessing over 13 years of direct field experience. This encompasses the management of large-scale civil and structural projects across multiple build phases within the Philippines. Holding an industrial design patent registered in 2014, the author's career has been heavily concentrated on managing operational ground truth: the reality of material procurement delays, heavy equipment mobilization failures, and critical workforce deficits.
 
+> 執筆者のジェリコオング（Jericho Ong）は、土木・建築分野における施工管理および建設オペレーションの実務経験を13年以上有しております。これには、フィリピン国内における大規模な土木・構造プロジェクトの複数フェーズにわたる直接的な管理経験が含まれます。2014年には工業デザイン特許を取得しており、キャリアの大半を「現場の真実（グラウンド・トゥルース）」、すなわち資材調達の遅延、重機動員の失敗、そして深刻な労働力不足といった現実的課題の管理に費やしてまいりました。
+
 Currently based in Japan, the author is actively transitioning into Information Technology with a specialized focus on Construction DX, Logistics DX, Cybersecurity, and AI systems. The professional certification roadmap strictly adheres to the IPA pathway, progressing from the Fundamental Information Technology Engineer (FE) examination to the Applied Information Technology Engineer (AP) examination. The long-term objective is to operate at the intersection of physical operations and digital infrastructure, a domain critical to Japan's industrial competitiveness over the ensuing decade.
+
+> 現在は日本に在住し、建設DX、物流DX、サイバーセキュリティ、およびAIシステムを専門領域とする情報技術分野へのキャリア転換を積極的に進めております。専門資格の取得ロードマップはIPAの体系に厳格に準拠しており、基本情報技術者試験（FE）から応用情報技術者試験（AP）への進階を計画しております。長期的な目標は、今後の10年間において日本の産業競争力を決定づける中核領域である、フィジカルな現場オペレーションとデジタルインフラの交差領域において貢献することでございます。
 
 This repository was established to address a highly specific systemic gap. The Japanese IT sector possesses exceptional engineering talent adept at cloud architecture, AI pipelines, and systems design. Conversely, the Japanese construction sector possesses seasoned professionals who understand the logistical complexities of urban material delivery and site management. However, there is a critical scarcity of professionals bridging these two domains. This framework serves as a bridge, provided with the empirical specificity that only a practitioner with cross-domain experience can articulate.
 
+> 本リポジトリを構築した理由は、極めて特異的かつ体系的な空白に対処するためでございます。日本のIT業界には、クラウドアーキテクチャ、AIパイプライン、システム設計に精通した極めて優秀なエンジニアが存在します。一方、建設業界には、都市部への資材搬入や現場管理の物流的複雑さを熟知した経験豊富な専門家が存在します。しかしながら、これら二つの領域を架橋できる人材は決定的に不足しております。本フレームワークは、その乖離の両側に立った経験を持つ実務家にしか明文化できない具体性を伴う橋梁として機能するものです。
+
 This repository constitutes original intellectual work rather than a theoretical academic exercise or a mere compilation of existing literature. It is grounded in verified operations experience, structured rigorously as a systems engineering framework, and contributed to the global knowledge commons.
 
----
+> これは理論的な学術演習や既存文献の単なる要約ではございません。現場で検証された実務経験を基盤とし、システムズエンジニアリングのフレームワークとして厳格に構造化され、グローバルな知識基盤へと提供されるオリジナルの知的成果物でございます。
 
-### The Core Analytical Insight
+***
+
+## 2. The Core Analytical Insight / 核心的な分析的洞察
 
 > **A construction site is, by definition, a volatile logistics node.**
+> **建設現場は、定義上、揮発性の物流ノードである。**
 
 Material procurement, delivery sequencing, on-site inventory control, heavy equipment scheduling, and subcontractor workforce coordination are fundamentally logistics operations. In traditional frameworks, they occur without the benefit of logistics technology, standardized data protocols, or applied systems thinking.
 
+> 資材調達、納品シーケンス、現場在庫管理、重機スケジューリング、および協力業者の人員調整は、根本的に物流オペレーションでございます。従来の枠組みにおいて、これらは物流テクノロジー、標準化されたデータプロトコル、あるいは応用的なシステム思考の恩恵を受けることなく実行されております。
+
 The resultant inefficiencies are systemic: cost overruns, schedule slippage, safety incidents, and material waste. These operational failures cost the Japanese construction industry hundreds of billions of yen annually. This framework exists to define that problem precisely, map its architectural structure, and propose an engineered solution.
 
----
+> その結果生じる非効率性は構造的なものです。コスト超過、工程遅延、安全インシデント、および資材廃棄といった運用上の失敗は、日本の建設業界に年間数千億円規模の損失をもたらしております。本フレームワークは、その問題を精確に定義し、そのアーキテクチャ構造をマッピングし、エンジニアリングに基づく解決策を提示するために存在しております。
 
-### The Japanese Industrial Context
+***
+
+## 3. The Japanese Industrial Context / 日本における産業的文脈
 
 Japan is currently navigating three converging systemic crises within its construction and logistics sectors:
+> 日本の建設および物流分野は、現在、三つの収束しつつある構造的危機に直面しております。
 
 **1. The 2024 Problem (2024年問題)**
 Strict overtime regulations implemented in April 2024 have severely constrained available labor hours across both the construction and logistics industries. Consequently, productivity-per-worker has become the primary economic variable. Technology is now mandated to solve what legislative action has constrained.
+> 2024年4月より施行された厳格な時間外労働上限規制により、建設・物流双方における稼働可能な労働時間が大幅に制限されました。その結果、労働者一人当たりの生産性が最重要の経済変数となっております。立法的措置によって制約された課題を、テクノロジーによって解決することが現在義務付けられております。
 
-**2. The i-Construction and BIM/CIM Mandate**
+**2. The i-Construction and BIM/CIM Mandate (i-ConstructionおよびBIM/CIMの義務化)**
 Japan's Ministry of Land, Infrastructure, Transport and Tourism (MLIT) requires digital construction workflows across all public works projects. The industry is structurally obligated to transform but critically lacks the cross-disciplinary human capital required to design and execute that transformation.
+> 国土交通省（MLIT）は、すべての公共工事においてデジタル化された建設ワークフローを要求しております。業界全体が構造的な変革を義務付けられておりますが、その変革を設計し実行するために必要な分野横断的な人的資本が決定的に不足しております。
 
-**3. The Physical AI Frontier**
+**3. The Physical AI Frontier (フィジカルAIの最前線)**
 Autonomous machinery, humanoid site robots, digital twins, and AI-driven predictive scheduling algorithms are rapidly entering the procurement cycles of major general contractors (ゼネコン). The requisite knowledge infrastructure to evaluate, implement, and govern these advanced systems does not yet exist in an accessible, structured format.
+> 自律型建設機械、ヒューマノイド現場ロボット、デジタルツイン、およびAI駆動型予測スケジューリングアルゴリズムが、大手ゼネコンの調達サイクルに急速に組み込まれつつあります。これらの高度なシステムを評価、導入、およびガバナンスするために必須となる知識基盤は、アクセス可能な構造化されたフォーマットとしては未だ存在しておりません。
 
 The author is strategically aligning their professional expertise to operate concurrently within these three critical contexts.
+> 執筆者は、これら三つの極めて重要な文脈において同時に機能すべく、自らの専門的知見を戦略的に適合させております。
 
----
+***
 
-### Research Scope
+## 4. Research Scope / 調査範囲
 
 | Domain | Coverage |
-|---|---|
-| Construction DX | BIM/CIM, i-Construction, Digital Twin, IoT Site Monitoring, Drone Integration |
-| Logistics DX | 2024 Problem Response, Smart Warehousing, Last-Mile to Build Sites, Supply Chain Visibility |
-| Intersection (Original) | Construction Sites as Logistics Nodes, JIT Material Delivery, Heavy Equipment & Mobilization Optimization |
-| AI & Robotics | Autonomous Machinery, Humanoid Safety Monitoring, Physical AI Architecture |
-| Policy & Compliance | MLIT Directives, IPA Security Framework Alignment, GX/Carbon Neutral Construction |
-| Systems Architecture | Digital Twin Concepts, API-Level Material Delivery Specifications, IoT Platform Design |
-| Industry Case Studies | Major ゼネコン DX Initiatives, Logistics Operator Transformations, Startup Ecosystem |
+| :--- | :--- |
+| **Construction DX** | BIM/CIM, i-Construction, Digital Twin, IoT Site Monitoring, Drone Integration |
+| **Logistics DX** | 2024 Problem Response, Smart Warehousing, Last-Mile to Build Sites, Supply Chain Visibility |
+| **Intersection (Original)** | Construction Sites as Logistics Nodes, JIT Material Delivery, Heavy Equipment & Mobilization Optimization |
+| **AI & Robotics** | Autonomous Machinery, Humanoid Safety Monitoring, Physical AI Architecture |
+| **Policy & Compliance** | MLIT Directives, IPA Security Framework Alignment, GX/Carbon Neutral Construction |
+| **Systems Architecture** | Digital Twin Concepts, API-Level Material Delivery Specifications, IoT Platform Design |
+| **Industry Case Studies** | Major ゼネコン DX Initiatives, Logistics Operator Transformations, Startup Ecosystem |
 
----
+***
 
-### Repository Structure
+## 5. Repository Structure / リポジトリ構成
 
 ```text
 construction-logistics-dx-japan/
