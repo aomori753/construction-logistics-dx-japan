@@ -27,6 +27,7 @@ The absolute failure point in contemporary industry modernization efforts stems 
 > 現代の産業近代化への取り組みにおける絶対的な失敗要因は、データ・ステートマシン（状態遷移機械）に関する認識論的な誤解に起因しております。「SaaSの幻想」と実際のシステムエンジニアリングを厳格に切り離すことが不可欠でございます。
 
 ### 1.1 The Definition of Digitization (デジタイゼーションの定義)
+
 Digitization is strictly defined as the mechanical conversion of analog artifacts, manual communication protocols, and physical ledgers into isolated digital formats. When a traditional Genekon (General Contractor) replaces physical paper blueprints with tablet computers, or transitions from whiteboard scheduling to cloud-based spreadsheets, they have **not** transformed the operation. 
 They have merely digitized the administrative friction. 
 
@@ -38,6 +39,7 @@ Digitization creates "read-only" data silos. A PDF of a daily inspection report 
 > デジタイゼーションは「読み取り専用」のデータサイロを生成いたします。日々の検査報告書のPDFファイルは、セメントの配送を自律的にトリガーする能力を一切持ち合わせておりません。それは物理世界の非効率性を記録するのみであり、構造的に解決するための実行可能な論理（ロジック）を欠いております。デジタイゼーションはデータ生成のための必須の前提条件ではございますが、重機建設現場の根本的なスループット制約を変更することは不可能でございます。
 
 ### 1.2 The Definition of Digital Transformation (デジタルトランスフォーメーションの定義)
+
 Digital Transformation (DX) is the complete ontological overhaul of the physical workflow, grounded in the principles of Cyber-Physical Systems (CPS). DX requires stripping the construction and supply chain delivery processes down to their fundamental Newtonian physics—mass, distance, velocity, and time—and rebuilding them as a continuously synchronized, algorithmically coordinated network.
 
 > デジタルトランスフォーメーション（DX）は、サイバーフィジカルシステム（CPS）の原則に基づいた、物理的ワークフローの完全かつオントロジー的な再構築でございます。DXは、建設およびサプライチェーンの配送プロセスを、質量、距離、速度、時間というニュートン力学の基本原則にまで分解し、継続的に同期され、アルゴリズムによって調整されるネットワークとして再構築することを要求いたします。
@@ -55,11 +57,13 @@ Within the strict parameters of this framework, we define DX as the translation 
 > 本フレームワークの厳格なパラメータ内において、私たちはDXを「物理的なヒューリスティック（経験則）から決定論的コードへの翻訳」と定義いたします。土木工学の中核となる変数は、もはや人間の認知的過負荷に左右される孤立した非同期イベントとして扱われてはなりません。
 
 ### 2.1 The Construction Site as a Computational Node (計算ノードとしての建設現場)
+
 To engineer a functional DX architecture, the construction site must be viewed as an edge-computing node. The physical site gate is an API endpoint. The staging areas are data caches. The heavy machinery represents the processing threads. When viewed through this lens, logistical bottlenecks (trucks waiting outside the gate) are no longer physical traffic issues; they are system latency errors caused by asynchronous data arrival.
 
 > 機能的なDXアーキテクチャを設計するためには、建設現場をエッジコンピューティングノードとして見なす必要がございます。物理的な現場ゲートはAPIエンドポイントでございます。資材置き場はデータキャッシュでございます。重機は処理スレッドを表しております。このレンズを通して見ると、物流のボトルネック（ゲート外で待機するトラック）はもはや物理的な交通問題ではなく、非同期データの到着によって引き起こされるシステム遅延（レイテンシ）エラーでございます。
 
 ### 2.2 Continuous Telemetry vs. Discrete Reporting (継続的テレメトリー対 離散的報告)
+
 Traditional sites operate on discrete time steps ($t_1, t_2, t_3$) using morning meetings and end-of-day reports. This creates massive temporal blind spots. An algorithmic ontology mandates continuous telemetry. IoT sensors on rebar, RFID tags on delivery vehicles, and MLIT-compliant drone LiDAR scans provide a continuous data stream, allowing the digital twin to simulate and resolve physical collisions in the cyber-domain milliseconds before they manifest in the physical domain.
 
 > 従来の現場は、朝礼や日報を用いた離散的なタイムステップ（$t_1, t_2, t_3$）で運用されております。これは膨大な時間的死角を生み出します。アルゴリズム的オントロジーは、継続的なテレメトリーを義務付けます。鉄筋に設置されたIoTセンサー、配送車両のRFIDタグ、およびMLIT準拠のドローンLiDARスキャンが継続的なデータストリームを提供し、物理的な衝突が現実世界に現出する数ミリ秒前に、デジタルツインがサイバー領域でそれらをシミュレートし解決することを可能にいたします。
@@ -74,19 +78,20 @@ The following structural mapping delineates the exact architectural differences 
 
 ```mermaid
 graph TD
-    subgraph Legacy Digitization / 従来のデジタイゼーション (Siloed Data)
+    subgraph legacy [Legacy Digitization / 従来のデジタイゼーション]
         A[Analog Process] -->|Scan / Data Entry| B(Static Digital Record: PDF/Excel)
         B --> C[Human Project Manager]
         C -->|Manual Interpretation| D(Delayed Physical Action)
         D -.->|High Latency| A
     end
 
-    subgraph Cyber-Physical DX / サイバーフィジカルDX (Algorithmic Integration)
+    subgraph dx [Cyber-Physical DX / サイバーフィジカルDX]
         E[Physical Ground Truth] <-->|Real-Time Telemetry / IoT| F((Digital Twin State-Machine))
         F <-->|API Driven Optimization| G[Predictive Logistics Algorithm]
         G -->|Automated Command| H(Synchronized Physical Action)
         H -->|Zero Latency Feedback| E
     end
+
 ## 4. Systemic Load-Balancing at Enterprise Scale / エンタープライズ規模におけるシステム的なロードバランシング
 
 In empirical civil engineering practice, the necessity of this algorithmic ontology becomes an absolute mathematical certainty. Traditional heuristic management possesses a hard cognitive ceiling that is easily shattered by enterprise-scale deployments.
@@ -95,7 +100,7 @@ In empirical civil engineering practice, the necessity of this algorithmic ontol
 
 ### 4.1 Combinatorial Explosion in Site Logistics (現場物流における組み合わせ爆発)
 
-Consider the orchestration of an infrastructural project with budgets exceeding ¥700 Million JPY, operating within a dense urban Japanese grid. The Project Manager must synchronize 1,000+ multi-disciplinary personnel, sequence hundreds of heavy material deliveries, and manage concurrent spatial constraints. 
+Consider the orchestration of an infrastructural project with budgets exceeding ¥700 Million JPY, operating within a dense urban Japanese grid. The Project Manager must synchronize 1,000+ multi-disciplinary personnel, sequence hundreds of heavy material deliveries, and manage concurrent spatial constraints.
 
 > 密集した日本の都市グリッド内で運用される、予算7億円を超えるインフラプロジェクトのオーケストレーションを想定してください。プロジェクトマネージャーは、1,000名を超える多分野にわたる人員を同期させ、数百の重量資材の配送順序を決定し、同時に発生する空間的制約を管理しなければなりません。
 
@@ -105,7 +110,7 @@ This creates a mathematically NP-hard routing problem. If 10 delivery trucks arr
 
 ### 4.2 The 2024 Problem as a Hard Boundary Constraint (厳格な境界制約としての「2024年問題」)
 
-The Japanese 2024 Problem (2024年問題) is often discussed as a political or labor policy issue. From a Systems Architecture perspective, it is a hard mathematical boundary constraint. The absolute legislative limit on overtime hours means time (t) can no longer be infinitely scaled to compensate for logistical inefficiencies.
+The Japanese 2024 Problem (2024年問題) is often discussed as a political or labor policy issue. From a Systems Architecture perspective, it is a hard mathematical boundary constraint. The absolute legislative limit on overtime hours means time ($t$) can no longer be infinitely scaled to compensate for logistical inefficiencies.
 
 > 日本の「2024年問題」は、しばしば政治や労働政策の問題として議論されます。しかし、システムアーキテクチャの視点から見ると、それは厳格な数学的境界制約でございます。時間外労働に対する絶対的な法的制限は、物流の非効率性を補うために時間を無限にスケールアップすることがもはや不可能であることを意味いたします。
 
@@ -117,7 +122,7 @@ Idle labor waiting for delayed material is not just a financial loss; it is a cr
 
 ## 5. Institutionalizing "Takumi" (Tacit Knowledge) / 「匠」の暗黙知の制度化とデジタル化
 
-A critical, strictly domestic sub-routine of Japanese DX is the immediate preservation of "Takumi" (匠)—the tacit, undocumented heuristic expertise held by veteran site superintendents. 
+A critical, strictly domestic sub-routine of Japanese DX is the immediate preservation of "Takumi" (匠)—the tacit, undocumented heuristic expertise held by veteran site superintendents.
 
 > 日本におけるDXの極めて重要かつ国内特有のサブルーチンは、ベテランの現場監督が持つ文書化されていないヒューリスティックな暗黙知である「匠」の技術を即座に保存することでございます。
 
@@ -162,3 +167,9 @@ Digital Transformation is not a software upgrade. It is a paradigm shift in phys
 By defining DX as a structural, algorithmic ontology, this framework provides the exact mathematical and logical baseline required to deploy functional IoT gateways, predictive AI routing, and API-driven supply chains in Module 03.
 
 > DXを構造的かつアルゴリズム的なオントロジーとして定義することにより、本フレームワークは、第03章で機能的なIoTゲートウェイ、予測的AIルーティング、およびAPI主導のサプライチェーンを展開するために必要な、正確な数学的および論理的基盤を提供するものでございます。
+
+***
+<div align="center">
+  <p><strong>[ END OF DOCUMENT // 02-01-DX-ONTOLOGY ]</strong></p>
+</div>
+    
