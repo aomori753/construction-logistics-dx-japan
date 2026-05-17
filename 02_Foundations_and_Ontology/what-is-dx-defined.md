@@ -12,7 +12,7 @@
 
 ---
 
-## Abstract / 概要
+## Executive Summary / 概要
 
 The modernization of the Japanese heavy civil construction and logistics sectors is currently paralyzed by a fundamental semantic error: the systemic conflation of *Digitization* (the electronic archiving of analog processes) with *Digital Transformation* (the architectural re-engineering of physical workflows via cyber-physical systems). This document establishes the definitive ontological baseline for true Enterprise DX. It dictates that transformation is not achieved through software procurement, but through the rigorous mathematical translation of physical constraints (mass, spatial geometry, temporal latency) into deterministic, algorithmically synchronized data structures. 
 
