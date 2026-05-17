@@ -103,9 +103,9 @@ In cloud architecture, this maps perfectly to **Identity and Access Management (
 
 ## 6. Algorithmic Lexicon: The Unified Engineering Language / アルゴリズム語彙集：統合エンジニアリング言語
 
-To definitively prove that 13 years of Site Management experience mathematically equips an engineer to architect enterprise cloud networks, the following Lexicon formally maps physical field operations directly into advanced Information Technology nomenclature.
+Large-scale IT architecture and heavy civil engineering are both governed by the universal laws of Systems Theory. To demonstrate the direct transferability of 13 years of physical site management into digital systems engineering, the following Lexicon maps physical construction heuristics into their exact structural equivalents in IT cloud architecture.
 
-> 13年間の現場管理経験が、エンジニアにエンタープライズクラウドネットワークを構築する能力を数学的に与えることを決定的に証明するため、以下の語彙集では、物理的な現場作業を高度な情報技術の専門用語へ直接かつ正式にマッピングいたします。
+> 大規模なITアーキテクチャと重土木工学は、いずれも「システム理論」の普遍的な法則に支配されております。13年間にわたる物理的な現場管理の経験が、デジタルシステムエンジニアリングへ直接的に応用可能であることを実証するため、以下の語彙集では、物理的な建設のヒューリスティックをITクラウドアーキテクチャにおける正確な構造的等価物へとマッピングいたします。
 
 | Physical Construction Heuristic<br>(物理的な建設のヒューリスティック) | IT Systems Architecture Equivalent<br>(ITアーキテクチャの対応概念) | Definitional Logic & Engineering Mapping<br>(定義論理とエンジニアリングマッピング) |
 | :--- | :--- | :--- |
@@ -115,8 +115,3 @@ To definitively prove that 13 years of Site Management experience mathematically
 | **Structural Factor of Safety (FoS)**<br>(構造安全率) | **Multi-AZ High Availability (HA)**<br>(マルチAZ 高可用性) | The deliberate engineering of redundant capacity (steel mass or server nodes) to ensure automatic load-redistribution and fault tolerance during catastrophic stress events. |
 | **Site Identification Gate Pass**<br>(新規入場者教育・入場許可証) | **JWT / Role-Based Access Control (RBAC)**<br>(JWT / ロールベースアクセス制御) | Cryptographic authorization ensuring that an entity (human or microservice) only has access to the specific spatial/digital zones required for their designated task. |
 | **As-Built Drawing & CAD Revisions**<br>(竣工図とCAD修正) | **Git Version Control / Audit Trail**<br>(Gitバージョン管理 / 監査証跡) | Maintaining an immutable, strictly audited history of structural modifications to ensure the physical building and the digital codebase possess absolute mathematical consistency. |
-
-***
-<div align="center">
-  <p><strong>[ END OF DOCUMENT // 02-02-SKILL-ONTOLOGY ]</strong></p>
-</div>
