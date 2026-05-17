@@ -68,17 +68,17 @@ The following logical diagram establishes the step-by-step ontological equivalen
 ```mermaid
 graph TD
     subgraph civil [Civil Engineering Lifecycle / 土木工学ライフサイクル]
-        A1[Geotechnical Boring Survey<br>地質ボーリング調査] --> B1[Foundation & Piling<br>基礎・杭打ち]
-        B1 --> C1[Temporary Scaffolding & Formwork<br>仮設足場と型枠]
-        C1 --> D1[Concrete Curing (Immutable)<br>コンクリート養生（不変）]
-        D1 --> E1[Structural Handover<br>構造体引渡し]
+        A1["Geotechnical Boring Survey<br>地質ボーリング調査"] --> B1["Foundation & Piling<br>基礎・杭打ち"]
+        B1 --> C1["Temporary Scaffolding & Formwork<br>仮設足場と型枠"]
+        C1 --> D1["Concrete Curing (Immutable)<br>コンクリート養生（不変）"]
+        D1 --> E1["Structural Handover<br>構造体引渡し"]
     end
 
     subgraph it [IT Systems Architecture / ITシステムアーキテクチャ]
-        A2[Load Testing & Chaos Engineering<br>負荷テストとカオスエンジニアリング] --> B2[Database Schema & IAM Roles<br>DBスキーマとIAMロール]
-        B2 --> C2[Docker Containers & IaC (Terraform)<br>コンテナ化とIaC]
-        C2 --> D2[Immutable State Build / CI Pipeline<br>不変状態のビルド]
-        D2 --> E2[Production Deployment (CD)<br>本番環境デプロイ]
+        A2["Load Testing & Chaos Engineering<br>負荷テストとカオスエンジニアリング"] --> B2["Database Schema & IAM Roles<br>DBスキーマとIAMロール"]
+        B2 --> C2["Docker Containers & IaC (Terraform)<br>コンテナ化とIaC"]
+        C2 --> D2["Immutable State Build / CI Pipeline<br>不変状態のビルド"]
+        D2 --> E2["Production Deployment (CD)<br>本番環境デプロイ"]
     end
 
     A1 -.->|Ontological Equivalence| A2
@@ -87,6 +87,7 @@ graph TD
     D1 -.->|Ontological Equivalence| D2
     E1 -.->|Ontological Equivalence| E2
 ```
+
 
 ## 5. Perimeter Integrity and IAM Zero-Trust / 境界の完全性とIAMゼロトラスト
 
