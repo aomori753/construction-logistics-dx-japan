@@ -59,7 +59,6 @@ This physical law dictates the core design principle of **High Availability (HA)
 > この物理法則は、**高可用性（HA）クラウドアーキテクチャ**の中核となる設計原則を規定いたします。堅牢なデジタルツインは、単一のサーバー（単一障害点）でホストすることはできません。システムは、複数のクラウド・アベイラビリティゾーン（マルチAZ）にまたがって設計されなければなりません。東京のサーバーラックが停電によりオフラインになった場合、Elastic Load Balancer（ELB）が瞬時にトラフィックを大阪の冗長サーバーラックにルーティングいたします。物理的な橋梁における耐震冗長性を設計するために使用される数学的計算は、エンタープライズ・ネットワーク・アーキテクチャにおいてマルチリージョンのフェイルオーバー・プロトコルを設計することと機能的に等価でございます。
 
 ---
-
 ## 4. Lifecycle Ontological Mapping / ライフサイクルのオントロジー的マッピング
 
 The following logical diagram establishes the step-by-step ontological equivalence between the physical Civil Engineering lifecycle and the IT Software Development Life Cycle (SDLC) / CI/CD pipeline.
@@ -71,15 +70,15 @@ graph TD
     subgraph civil [Civil Engineering Lifecycle / 土木工学ライフサイクル]
         A1[Geotechnical Boring Survey<br>地質ボーリング調査] --> B1[Foundation & Piling<br>基礎・杭打ち]
         B1 --> C1[Temporary Scaffolding & Formwork<br>仮設足場と型枠]
-        C1 --> D1[Concrete Curing <br>コンクリート養生]
+        C1 --> D1[Concrete Curing (Immutable)<br>コンクリート養生（不変）]
         D1 --> E1[Structural Handover<br>構造体引渡し]
     end
 
     subgraph it [IT Systems Architecture / ITシステムアーキテクチャ]
         A2[Load Testing & Chaos Engineering<br>負荷テストとカオスエンジニアリング] --> B2[Database Schema & IAM Roles<br>DBスキーマとIAMロール]
-        B2 --> C2[Docker Containers & IaC<br>コンテナ化とIaC]
-        C2 --> D2[Immutable State Build<br>不変状態のビルド]
-        D2 --> E2[Production Deployment<br>本番環境デプロイ]
+        B2 --> C2[Docker Containers & IaC (Terraform)<br>コンテナ化とIaC]
+        C2 --> D2[Immutable State Build / CI Pipeline<br>不変状態のビルド]
+        D2 --> E2[Production Deployment (CD)<br>本番環境デプロイ]
     end
 
     A1 -.->|Ontological Equivalence| A2
@@ -87,6 +86,7 @@ graph TD
     C1 -.->|Ontological Equivalence| C2
     D1 -.->|Ontological Equivalence| D2
     E1 -.->|Ontological Equivalence| E2
+```
 
 ## 5. Perimeter Integrity and IAM Zero-Trust / 境界の完全性とIAMゼロトラスト
 
@@ -114,3 +114,8 @@ To definitively prove that 13 years of Site Management experience mathematically
 | **Structural Factor of Safety (FoS)**<br>(構造安全率) | **Multi-AZ High Availability (HA)**<br>(マルチAZ 高可用性) | The deliberate engineering of redundant capacity (steel mass or server nodes) to ensure automatic load-redistribution and fault tolerance during catastrophic stress events. |
 | **Site Identification Gate Pass**<br>(新規入場者教育・入場許可証) | **JWT / Role-Based Access Control (RBAC)**<br>(JWT / ロールベースアクセス制御) | Cryptographic authorization ensuring that an entity (human or microservice) only has access to the specific spatial/digital zones required for their designated task. |
 | **As-Built Drawing & CAD Revisions**<br>(竣工図とCAD修正) | **Git Version Control / Audit Trail**<br>(Gitバージョン管理 / 監査証跡) | Maintaining an immutable, strictly audited history of structural modifications to ensure the physical building and the digital codebase possess absolute mathematical consistency. |
+
+***
+<div align="center">
+  <p><strong>[ END OF DOCUMENT // 02-02-SKILL-ONTOLOGY ]</strong></p>
+</div>
