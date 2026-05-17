@@ -91,6 +91,9 @@ graph TD
         G -->|Automated Command| H(Synchronized Physical Action)
         H -->|Zero Latency Feedback| E
     end
+```
+
+---
 
 ## 4. Systemic Load-Balancing at Enterprise Scale / エンタープライズ規模におけるシステム的なロードバランシング
 
@@ -172,4 +175,3 @@ By defining DX as a structural, algorithmic ontology, this framework provides th
 <div align="center">
   <p><strong>[ END OF DOCUMENT // 02-01-DX-ONTOLOGY ]</strong></p>
 </div>
-    
