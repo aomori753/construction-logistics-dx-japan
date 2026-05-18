@@ -50,40 +50,80 @@ message LogisticsTelemetry {
   int64 timestamp_utc = 5;       // Epoch execution time
   bytes ecdsa_signature = 6;     // Edge authentication hash
 }
+```
 
-## 3. Asynchronous Serialization via Protocol Buffers (gRPC) / プロトコルバッファ（gRPC）を介した非同期シリアライゼーション
+This algorithmic compression reduces payload sizes exponentially, enabling bidirectional streaming and ensuring that the site's load-balancing algorithms are fed with high-density, uninterrupted kinematic states.
 
-Transmitting continuous geospatial telemetry from hundreds of concurrent logistical nodes requires rigorous optimization of network payload serialization. The industry-standard adoption of RESTful APIs transmitting uncompressed JSON payloads is mathematically inefficient for high-frequency edge IoT communication. JSON introduces severe network overhead due to its verbose, text-based formatting, which degrades throughput and spikes cellular data transmission costs when scaling to enterprise fleets.
-
-> 数百の同時進行する物流ノードから継続的な地理空間テレメトリーを送信するには、ネットワークペイロードのシリアライゼーション（直列化）の厳密な最適化が必要となります。非圧縮のJSONペイロードを送信するRESTful APIの業界標準的な採用は、高頻度のエッジIoT通信にとっては数学的に非効率的でございます。JSONはその冗長なテキストベースのフォーマットにより深刻なネットワークオーバーヘッドをもたらし、エンタープライズのフリート（車両群）へとスケールアップする際にスループットを低下させ、セルラーデータ通信コストを急増させます。
-
-To engineer a resilient, low-latency tracking architecture, this framework dictates the adoption of Protocol Buffers (Protobuf) transmitted over gRPC (gRPC Remote Procedure Calls). Protobuf fundamentally transforms the data standard by serializing the positional vectors (Latitude, Longitude, Heading, Velocity, Timestamp) into tightly compressed binary streams. This algorithmic compression reduces payload size by exponentially higher margins compared to JSON, enabling asynchronous, bidirectional streaming between the moving physical asset and the central digital twin. This guarantees that the site's load-balancing algorithms are fed with high-density, uninterrupted kinematic states, even when transport vehicles traverse areas with degraded cellular connectivity.
-
-> 回復力のある低レイテンシの追跡アーキテクチャを設計するために、本フレームワークはgRPC（gRPCリモートプロシージャコール）を介して送信されるプロトコルバッファ（Protobuf）の採用を規定しております。Protobufは、位置ベクトル（緯度、経度、進行方向、速度、タイムスタンプ）を厳密に圧縮されたバイナリストリームにシリアライズすることで、データ標準を根本的に変革いたします。このアルゴリズムによる圧縮は、JSONと比較してペイロードサイズを指数関数的に高いマージンで削減し、移動する物理的資産と中央のデジタルツイン間の非同期の双方向ストリーミングを可能にします。これにより、輸送車両がセルラー接続の低下したエリアを通過する場合であっても、現場のロードバランシングアルゴリズムに高密度で途切れることのないキネマティック状態が供給されることが保証されます。
+> 数百の同時進行する物流ノードから継続的な地理空間テレメトリーを送信するには、ペイロードの厳密な最適化が必要となります。非圧縮のJSONペイロードを送信するRESTful APIは、冗長な文字列表現により、深刻なネットワークオーバーヘッドとレイテンシのスパイクをもたらします。
+> 
+> 回復力のある低レイテンシの追跡アーキテクチャを設計するため、本フレームワークは**gRPC**を介して送信される**プロトコルバッファ（Protobuf）**の採用を規定しております。Protobufは、位置ベクトルを厳密に圧縮された言語依存のないバイナリストリームにシリアライズすることで、データ標準を根本的に変革いたします。（上記コードブロック参照）。このアルゴリズム的圧縮によりペイロードサイズが指数関数的に削減され、双方向ストリーミングが可能となり、現場のロードバランシングアルゴリズムに高密度で途切れることのないキネマティック状態が供給されることが保証されます。
 
 ---
 
-## 4. Algorithmic ETA Calculation via Dynamic Time Warping (DTW) / 動的時間伸縮法（DTW）によるアルゴリズム的ETA計算
+## 3. Algorithmic ETA Calculation via Dynamic Time Warping (DTW) / 動的時間伸縮法（DTW）によるアルゴリズム的ETA計算
 
-To neutralize the physical bottlenecks defined by Japan's 2024 Problem, the data standard must transition from static linear distance equations to predictive, non-linear algorithmic modeling. Traditional logistics tracking calculates ETA by dividing remaining distance by current speed, utterly failing to account for the highly dynamic friction of metropolitan Japanese traffic corridors and the variable unloading queues at the construction site. 
+To neutralize the bottlenecks defined by Japan's 2024 Problem, logistics tracking must transition from static linear velocity equations ($v = d/t$) to predictive, non-linear algorithmic modeling. 
 
-> 日本の2024年問題によって定義される物理的なボトルネックを無効化するために、データ標準は静的な線形距離の計算式から、予測的で非線形なアルゴリズムのモデリングへと移行しなければなりません。従来の物流追跡は、残りの距離を現在の速度で割ることによってETAを計算しますが、日本の大都市圏の交通回廊における極めて動的な摩擦や、建設現場での変動する荷降ろしの待機列を考慮することに完全に失敗しております。
+This framework requires the implementation of **Dynamic Time Warping (DTW)** integrated with continuous Machine Learning models. Calculating exact arrival times through dense urban traffic requires analyzing time-series datasets of varying speeds and lengths. DTW algorithms calculate the optimal match between two given sequences with time complexity $O(N \cdot M)$, comparing the inbound truck's real-time telemetry array against thousands of historically successful delivery vectors. This ensures the JIT arrival sequence perfectly aligns with the tower crane availability matrix, eliminating cascading idle failures.
 
-This framework requires the implementation of algorithms such as Dynamic Time Warping (DTW) integrated with continuous Machine Learning regression models. DTW measures the mathematical similarity between the current telemetry sequence of an inbound truck and thousands of historically successful delivery vectors. By analyzing these continuous time-series data structures, the system architecturally predicts flow constraints and dynamically re-routes assets in real-time. This ensures that the JIT (Just-In-Time) arrival sequence perfectly matches the availability matrix of the tower cranes, eliminating the cascading structural failure caused by vehicles idling outside the site perimeter.
-
-> 本フレームワークは、継続的な機械学習の回帰モデルと統合された動的時間伸縮法（DTW）などのアルゴリズムの実装を必要としております。DTWは、接近するトラックの現在のテレメトリーシーケンスと、過去の何千もの成功した配送ベクトルの間の数学的類似性を測定いたします。これらの継続的な時系列データ構造を分析することで、システムはフローの制約をアーキテクチャレベルで予測し、資産をリアルタイムで動的に再ルーティングいたします。これにより、JIT（ジャスト・イン・タイム）の到着シーケンスがタワークレーンの可用性マトリックスと完璧に一致することが保証され、現場の境界外でアイドリングする車両によって引き起こされる連鎖的な構造的障害が排除されます。
+> 日本の2024年問題によって定義されるボトルネックを無効化するため、物流追跡は静的な線形速度方程式（$v = d/t$）から、予測的で非線形なアルゴリズムモデリングへと移行しなければなりません。
+> 
+> 本フレームワークは、継続的な機械学習モデルと統合された**動的時間伸縮法（DTW）**の実装を必要としております。渋滞の激しい都市部の交通における正確な到着時間を計算するには、速度や長さが異なる時系列データセットを分析する必要がございます。DTWアルゴリズムは、時間計算量$O(N \cdot M)$を用いて2つのシーケンス間の最適な一致を計算し、接近するトラックのリアルタイムのテレメトリー配列と、過去の何千もの成功した配送ベクトルとを比較いたします。これにより、JIT到着シーケンスがタワークレーンの可用性マトリックスと完全に一致し、連鎖的な待機障害が排除されます。
 
 ---
 
-## 5. IPA Cryptographic Sovereignty and Edge Authentication / IPA暗号化の主権とエッジ認証
+## 4. Cryptographic Sovereignty and Edge Authentication (mTLS) / 暗号化の主権とエッジ認証（mTLS）
 
-When a physical transport vehicle continuously transmits its geospatial coordinates to a highly sensitive, ¥700M+ infrastructure project, it fundamentally ceases to be a mere truck; it becomes a critical node within the enterprise IoT network. Consequently, the tracking data standards must strictly adhere to the cryptographic security baselines established by the Information-technology Promotion Agency (IPA). Unsecured GPS telemetry is highly susceptible to spoofing attacks, where malicious actors inject synthetic data packets to falsely trigger site gates or manipulate supply chain scheduling, causing catastrophic physical disruption.
+When a transport vehicle continuously transmits geospatial coordinates to a highly sensitive, ¥700M+ infrastructure project, it becomes a critical node within the enterprise IoT network. Unsecured GPS telemetry is highly susceptible to spoofing attacks, potentially manipulating supply chain scheduling and causing catastrophic physical disruption.
 
-> 物理的な輸送車両が、7億円を超える極めて機密性の高いインフラプロジェクトに自らの地理空間座標を継続的に送信する際、それは根本的に単なるトラックではなくなり、エンタープライズIoTネットワーク内の重要なノードとなります。したがって、追跡データの基準は、情報処理推進機構（IPA）によって確立された暗号化セキュリティのベースラインに厳密に準拠しなければなりません。保護されていないGPSテレメトリーはスプーフィング（なりすまし）攻撃に対して極めて脆弱であり、悪意のあるアクターが合成データパケットを注入して現場のゲートを誤ってトリガーさせたり、サプライチェーンのスケジューリングを操作したりすることで、壊滅的な物理的混乱を引き起こす可能性がございます。
+Tracking standards must strictly adhere to the Information-technology Promotion Agency (IPA) cybersecurity baselines. The architecture mandates **Mutual Transport Layer Security (mTLS)** for edge-to-cloud communications. Every physical asset must be cryptographically authenticated via **ECDSA (Elliptic Curve Digital Signature Algorithm)** and X.509 certificates. This Zero-Trust architecture ensures ingested geospatial metrics remain completely immutable, sovereign, and immune to synthetic data injection.
 
-To secure this architecture, the data tracking standard mandates Mutual Transport Layer Security (mTLS) for all edge-to-cloud communications. Every physical transport asset must be cryptographically authenticated via X.509 certificates before its telemetry data is permitted to interact with the site's digital twin. This Zero-Trust data standard ensures that the ingested geospatial metrics remain completely immutable, sovereign, and immune to spoofing. Physical project management is thus indistinguishable from robust cybersecurity engineering; ensuring the right material arrives at the right time requires absolute mathematical certainty of the sender's identity.
+> 輸送車両が、7億円を超える極めて機密性の高いインフラプロジェクトに地理空間座標を継続的に送信する際、それはエンタープライズIoTネットワーク内の重要なノードとなります。保護されていないGPSテレメトリーはスプーフィング攻撃に対して極めて脆弱であり、サプライチェーンのスケジューリングを操作し、壊滅的な物理的混乱を引き起こす可能性がございます。
+> 
+> 追跡の基準は、情報処理推進機構（IPA）のサイバーセキュリティベースラインに厳密に準拠しなければなりません。アーキテクチャは、エッジ・ツー・クラウド通信に対して**相互トランスポート層セキュリティ（mTLS）**を義務付けております。すべての物理的資産は、**ECDSA（楕円曲線デジタル署名アルゴリズム）**およびX.509証明書を介して暗号学的に認証されなければなりません。このゼロトラストアーキテクチャにより、取り込まれた地理空間メトリクスが完全に不変であり、主権を保ち、合成データの注入に対して免疫を持つことが保証されます。
 
-> このアーキテクチャを保護するために、データ追跡標準は、すべてのエッジ・ツー・クラウド通信に対して相互トランスポート層セキュリティ（mTLS）を義務付けております。すべての物理的な輸送資産は、そのテレメトリーデータが現場のデジタルツインと相互作用することを許可される前に、X.509証明書を介して暗号学的に認証されなければなりません。このゼロトラストのデータ標準は、取り込まれた地理空間メトリクスが完全に不変であり、主権を保ち、スプーフィングに対して免疫を持つことを保証いたします。したがって、物理的なプロジェクト管理は堅牢なサイバーセキュリティエンジニアリングと区別がつきません。適切な資材が適切な時期に到着することを保証するには、送信者の身元に関する絶対的な数学的確実性が要求されるのです。
+---
+
+## 5. M2M Telemetry Pipeline Architecture / M2Mテレメトリーパイプライン・アーキテクチャ
+
+The following architecture diagram dictates the strictly sequenced M2M data pipeline, bridging the physical logistics asset to the centralized Digital Twin via Zero-Trust methodologies.
+
+> 以下のアーキテクチャ図は、物理的な物流資産と中央のデジタルツインをゼロトラスト手法を介して橋渡しする、厳密に順序付けられたM2Mデータパイプラインを規定するものでございます。
+
+```mermaid
+sequenceDiagram
+    participant Edge as "IoT Edge Sensor<br>(Physical Truck)"
+    participant Auth as "IPA Zero-Trust<br>API Gateway (mTLS)"
+    participant Kafka as "gRPC / Protobuf<br>Stream (Kafka Queue)"
+    participant DTW as "DTW Algorithmic<br>Engine (ETA)"
+    participant Twin as "Site Digital Twin<br>(Load Balancer)"
+
+    Edge->>Auth: "Initiate mTLS Handshake (X.509/ECDSA)"
+    Auth-->>Edge: "Cryptographic Authentication Success"
+    loop "High-Frequency Telemetry"
+        Edge->>Kafka: "Stream Binary Payload (RTK WGS84)"
+        Kafka->>DTW: "Ingest Asynchronous Data Vector"
+        DTW->>Twin: "Predictive Output: JIT Arrival Match"
+        Twin-->>Twin: "Execute Ray-Casting / Polygon Geofence"
+        Twin->>Edge: "Return Automated Gate Clearance (Zero Latency)"
+    end
+```
+
+---
+
+## 6. Geospatial Data Schema Lexicon / 地理空間データスキーマ語彙集
+
+To formalize the integration of Civil Engineering logistics with IT Data Engineering, the following standard maps the required physical inputs into their exact programmatic data types and cryptographic states.
+
+> 土木工学の物流とITデータエンジニアリングの統合を形式化するため、以下の基準は、必要な物理的入力データを正確なプログラム上のデータ型および暗号化状態にマッピングいたします。
+
+| Physical Logistic Variable<br>(物理的な物流変数) | IT Data Type & Schema<br>(ITデータ型とスキーマ) | Architectural Function & Constraints<br>(アーキテクチャ上の機能と制約) |
+| :--- | :--- | :--- |
+| **Site Boundary Definition**<br>(現場境界の定義) | **GeoJSON Polygon Array**<br>(Float64) | Defines the algorithmic boundary constraint. Must be dynamically updated daily from BIM/CIM spatial models. |
+| **Vehicle Geolocation**<br>(車両の地理位置情報) | **RTK WGS84 Coordinates**<br>(Double Precision) | Sub-centimeter positional geometry to prevent spatial ambiguity at narrow urban construction gates. |
+| **Asset Identity Validation**<br>(資産の身元検証) | **ECDSA Signature (mTLS)**<br>(Byte Array) | Cryptographic proof ensuring the telemetry packet originated from an authorized vehicle, preventing data spoofing. |
+| **Dynamic Routing Metric**<br>(動的ルーティング指標) | **Kinematic Velocity Vector**<br>(Float32 m/s) | Real-time speed and heading data fed continuously into the DTW (Dynamic Time Warping) ETA prediction engine. |
+| **Event Chronology**<br>(イベントの時系列) | **Unix Epoch UTC**<br>(Int64) | Absolute, time-zone independent chronological marker ensuring perfect synchronization across all microservices. |
 
 ***
 <div align="center">
