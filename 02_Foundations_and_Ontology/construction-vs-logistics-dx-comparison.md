@@ -83,7 +83,9 @@ graph TD
     L2 ===>|Continuous Telemetry| U1
     C2 ===>|Spatial Availability| U1
     U1 ===>|Zero-Latency Synchronization| U2
+```
 
+---
 
 ## 4. Sub-Contractor Autonomy vs. Systemic Orchestration / 協力会社の自律性 対 システム的オーケストレーション
 
@@ -94,8 +96,6 @@ If DX is treated merely as software procurement, each sub-contractor adopts a di
 > もう一つの構造的な摩擦点は、重建設の分散的な性質にございます。大規模な土木現場は単一の企業ではなく、50〜100の独立した零細企業（協力会社）の一次的な集合体でございます。各協力会社は、特殊な資材（鉄骨、空調設備、コンクリートなど）を配送するために、独自に断片化された物流ネットワークを利用しております。
 > 
 > DXが単なるソフトウェアの調達として扱われた場合、各協力会社が異なるSaaSツールを採用し、「APIスプロール現象（無秩序な乱立）」を招きます。ゼネコン（総合建設業者）は現場全体のグローバル状態を調整する能力を失います。したがって、クロスドメインAPIゲートウェイは、プロトコルに依存しない厳格なデータ標準を強制しなければなりません。鉄骨サプライヤーがどのソフトウェアを使用していようと、その配送テレメトリーは、ゼネコンのデジタルツイン・エコシステムに入る前に、統合されたProtobufスキーマへとシリアライズされる必要がございます。
-
----
 
 ## 5. Intersectional Lexicon of Friction / 交差領域の摩擦に関する語彙集
 
