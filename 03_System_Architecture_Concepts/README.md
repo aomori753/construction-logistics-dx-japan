@@ -199,6 +199,6 @@ graph TD
 
 ***
 <div align="center">
-  <p><strong>[ SYSTEM ARCHITECTURE BLUEPRINT // J. ONG ]</strong></p>
+  <p><strong>[ SYSTEM ARCHITECTURE BLUEPRINT // Jericho Ong / ジェリコ・オング  ]</strong></p>
 </div>
 ```
