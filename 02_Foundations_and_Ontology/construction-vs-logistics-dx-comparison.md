@@ -1,3 +1,5 @@
+
+
 <div align="center">
   <h1>Intersectional Analysis: Construction vs. Logistics DX</h1>
   <h3>建設DXと物流DXの交差分析：非同期データファイアウォールの解体</h3>
@@ -116,13 +118,28 @@ To resolve these systemic bottlenecks, we must define the differing terminologie
 </div>
 
 
-## 6. Technical Implementation: Cross-Domain API Routing Logic / 技術的実装：クロスドメインAPIのルーティング論理
+## 6. Intersectional Lexicon of Friction / 交差領域の摩擦に関する語彙集
 
-To provide immediate educational and technical utility to systems architects, the following pseudo-architecture demonstrates the exact programmatic mechanism required to dismantle the asynchronous firewall. 
+To resolve these systemic bottlenecks, we must define the differing terminologies used by both domains and establish the unified systems-engineering resolution.
+
+> これらのシステム的なボトルネックを解決するため、私たちは双方の領域で使用される異なる専門用語を定義し、システムエンジニアリングに基づく統合された解決策を確立しなければなりません。
+
+| Logistics Domain Concept<br>(物流領域の概念) | Construction Domain Concept<br>(建設領域の概念) | Unified Systems Architecture Resolution<br>(統合システムアーキテクチャによる解決策) |
+| :--- | :--- | :--- |
+| **Node Arrival (Destination)**<br>ノード到着（目的地） | **Site Boundary Perimeter**<br>現場境界線（仮囲い） | **Dynamic Geofence Webhook (動的ジオフェンスWebhook):** Arrival is no longer a static pin, but an API trigger activated when a vehicle breaches a dynamic, BIM-defined spatial polygon. |
+| **Fleet Dwell Time**<br>フリート滞留時間 | **Material Waiting Queue**<br>資材搬入待機列 | **Synchronized Execution Thread (同期実行スレッド):** Treating the queue not as physical traffic, but as a thread-blocking error solved via JIT (Just-In-Time) algorithmic dispatching. |
+| **Route Pathing (Edges)**<br>経路ルーティング（エッジ） | **Site Access Roads**<br>現場搬入路・仮設道路 | **Unified Flow Topology (統合フロートポロジー):** Expanding the construction site's digital twin to encompass the immediate municipal traffic network, optimizing the "last mile" dynamically. |
+| **Proof of Delivery (POD)**<br>配達完了証明（受領書） | **Material Inspection (As-Built)**<br>材料検収（施工管理） | **Immutable Ledger Entry (不変の台帳エントリ):** Replacing paper sign-offs with an automated cryptographic hash confirming the physical spatial transfer of the asset into the construction grid. |
+
+---
+
+## Appendix A: Technical Implementation (Cross-Domain API Routing Logic) / 付属書 A：技術的実装（クロスドメインAPIルーティング論理）
+
+To provide immediate educational and technical utility to enterprise systems architects, the following pseudo-architecture demonstrates the exact programmatic mechanism required to dismantle the asynchronous firewall. 
 
 Using a Python-based asynchronous gateway (e.g., FastAPI), this routing logic ingests the incoming logistics telemetry (Graph Network data) and validates it against the live structural state of the construction site (Euclidean Grid data) before issuing a physical gate pass.
 
-> システムアーキテクトに即時的な教育的および技術的有用性を提供するため、以下の疑似アーキテクチャは、非同期ファイアウォールを解体するために必要な正確なプログラム的メカニズムを実証するものでございます。
+> エンタープライズ・システムアーキテクトに即時的な教育的および技術的有用性を提供するため、以下の疑似アーキテクチャは、非同期ファイアウォールを解体するために必要な正確なプログラム的メカニズムを実証するものでございます。
 > 
 > Pythonベースの非同期ゲートウェイ（FastAPIなど）を使用し、このルーティングロジックは受信した物流テレメトリー（グラフネットワークデータ）を取り込み、物理的な入場許可証（ゲートパス）を発行する前に、建設現場のリアルタイムの構造状態（ユークリッドグリッドデータ）と照合して検証を実行いたします。
 
