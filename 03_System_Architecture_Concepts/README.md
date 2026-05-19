@@ -28,7 +28,7 @@ At the core of this framework is the absolute transition from human-centric, hig
 > モジュール01で示されたマクロな構造的制約（2024年問題）と、モジュール02で定義されたオントロジーのプリミティブを基盤とし、日本の厳格な規制・空間・労働制約下において稼働可能な、多層的、イベント駆動型、かつ数学的に検証可能なアーキテクチャを提示します。  
 >  
 > 本フレームワークの中核は、人間中心の低頻度なヒューリスティック（朝礼や手動のホワイトボード管理など）から、マシンが解釈可能な運用セマンティクスへの完全な移行にございます。この最適化により、以下の機能が実現いたします。  
-> * 非線形エッジモデリングによる予測的物流オーケストレーション  
+> * 非線形エッジモデリングによる予測적物流オーケストレーション  
 > * 自律的なリアルタイム資材ルーティングとリソース平準化  
 > * 多層的な協力会社間の運用における継続的な空間衝突回避  
 > * ハードウェアにルートを持つ、ゼロトラスト・サイバーフィジカル安全性の強制執行  
@@ -142,7 +142,7 @@ To translate physical construction sites into queryable database models, the sys
 
 ---
 
-### ⚙️ Intended Technical Stack / 採用予定の技術スタック
+## ⚙️ Intended Technical Stack / 採用予定の技術スタック
 
 | Architectural Layer (階層) | Selected Component (採用コンポーネント) | Algorithmic / Protocol Focus (プロトコル・アルゴリズム) |
 | :--- | :--- | :--- |
@@ -155,7 +155,7 @@ To translate physical construction sites into queryable database models, the sys
 
 ---
 
-### Module Topology / モジュールのトポロジー
+## Module Topology / モジュールのトポロジー
 
 The following diagram outlines the structural relationship of the technical specifications contained within this module, executing the formal CPAL framework.
 
@@ -169,10 +169,36 @@ graph TD
     M3 --> D2["bim-cim-japan-mandate.md<br>3D Spatial Semantics & Topological Reasoning"]
     M3 --> D3["jit-material-delivery-api-concepts.md<br>Distributed Consensus & Predictive Routing"]
     M3 --> D4["cloud-infrastructure-japan.md<br>Zero-Trust CPS Security & Data Sovereignty"]
-    M3 --> D5["iot-sensor-networks-on-site.md<br>Edge Fusion, Secure Boot, Hardware Trust"]
+    M3 --> D5["iot-sensor-networks-on-site.md<br>Edge Hardware Deployment & Token Ingestion"]
 
     D5 -.->|High-Frequency Telemetry 10-50 Hz| D1
     D2 -.->|Semantic Spatial Constraints RCC8 / PostGIS| D1
     D1 ===>|Deterministic Orchestration FastAPI / Kafka| D3
     D4 ===>|Enforces Formal Safety Invariants| D1
+```
+
+---
+
+## 📂 Document Index / ドキュメント目次
+
+* 📄 **`digital-twin-site-management.md`**
+  * **Focus:** Redefining the Digital Twin as an event-sourced, cyber-physical state machine built on Hybrid Automata Theory, converting manual *Chorei* scheduling into automated Pub/Sub data flows.
+  * **概要:** デジタルツインをハイブリッド・オートマトン理論に基づくイベントソーシング型のサイバーフィジカル・ステートマシンとして再定義し、手動の朝礼スケジュールを自動化されたPub/Subデータフローへ変換します。
+* 📄 **`bim-cim-japan-mandate.md`**
+  * **Focus:** Implementing 3D spatial semantics and topological reasoning (PostGIS/RCC8) to align raw architectural BIM designs with queryable database geofences matching MLIT compliance frameworks.
+  * **概要:** 3D空間セマンティクスとトポロジー推論（PostGIS/RCC8）を実装し、生のBIM設計を国土交通省（MLIT）のコンプライアンス要件に適合するクエリ可能なデータベース・ジオフェンスと連携させます。
+* 📄 **`jit-material-delivery-api-concepts.md`**
+  * **Focus:** Architecting cross-domain FastAPI gateways utilizing Distributed Consensus (Raft) and Kalman trajectory prediction to enable automated, latency-free material delivery scheduling.
+  * **概要:** 分散コンセンサス（Raft）とカルマン軌道予測を活用したクロスドメインのFastAPIゲートウェイを設計し、遅延のない自動化されたJIT（ジャスト・イン・タイム）資材配送スケジューリングを実現します。
+* 📄 **`cloud-infrastructure-japan.md`**
+  * **Focus:** Engineering high-availability cloud infrastructure optimized for low-latency CPS data ingestion, ensuring compliance with Japanese data sovereignty laws and strict Zero-Trust runtimes.
+  * **概要:** CPSデータの低遅延インジェストに最適化された高可用性クラウドインフラを構築し、日本のデータ主権法および厳格なゼロトラスト・ランタイムへの準拠を保証します。
+* 📄 **`iot-sensor-networks-on-site.md`**
+  * **Focus:** Specifying hardware edge configurations, sensor fusion data pipelines, TPM-based security verification, and sub-GHz network topologies to extract physical Ground Truth securely.
+  * **概要:** 物理的なグラウンド・トゥルース（現場の現実）を安全に抽出するための、ハードウェアエッジ構成、センサーフュージョンのデータパイプライン、TPMベースのセキュリティ検証、およびサブギガ帯ネットワーク・トポロジーを規定します。
+
+***
+<div align="center">
+  <p><strong>[ SYSTEM ARCHITECTURE BLUEPRINT // J. ONG ]</strong></p>
+</div>
 ```
