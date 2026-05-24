@@ -84,7 +84,7 @@ graph TD
     end
 
     subgraph IoT_Edge_Network ["Edge Telemetry Layer / エッジ・テレメトリー層"]
-        RTK["RTK GPS Sensors (WGS84)"]
+        RTK["RTK GNSS Sensors (WGS84)"]
         Load["Crane Load Cells / IMUs"]
         TPM["TPM 2.0 Secure Boot"]
     end
@@ -101,24 +101,10 @@ graph TD
     Load --> TPM
     RTK --> TPM
     
-    TPM ===>|mTLS / Signed Event MQTT| Kafka
+    TPM ===>|mTLS ECDSA Signed Payload| Kafka
     
     Kafka --> State
     Kafka --> PostGIS
     
-    State -.->|API Webhook Reroute / Deny Gate| Truck
-    PostGIS -.->|Updates 3D Bounding Box| Zone
-
-
-    ## 5. Operational State Mapping Lexicon / 運用状態マッピング語彙集
-
-To programmatically execute this Digital Twin, physical site conditions must be constrained to explicit enumerations (`Enums`) within the software architecture. Below are standard Japanese construction states mapped to CPAL deterministic enums, converting physical reality into automated data flows.
-
-> このデジタルツインをプログラムで実行するためには、物理的な現場の状況をソフトウェアアーキテクチャ内の明示的な列挙型（`Enums`）に制約しなければなりません。以下は、日本の標準的な建設現場の状況を、CPALの決定論的Enumにマッピングしたものであり、物理的な現実を自動化されたデータフローへと変換します。
-
-| Physical Site Condition<br>(物理的な現場状況) | Digital State Transition (Enum)<br>(デジタル状態遷移) | Algorithmic Consequence<br>(アルゴリズムによる実行結果) |
-| :--- | :--- | :--- |
-| **Machinery Idle / Engine Off**<br>重機待機中・エンジン停止 | `STATE_OFFLINE` | Logistics routing APIs are informed that the asset is unavailable for unloading sequences. |
-| **Tamagake (Slinging / Rigging)**<br>玉掛け作業中 | `STATE_EXECUTING_CRITICAL` | Surrounding 3D geofence is locked. All intersecting inbound vectors are dynamically rerouted to external buffer zones. |
-| **Zone Cleared / Material Dropped**<br>資材配置完了・エリア解放 | `STATE_ZONE_RELEASED` | Triggers asynchronous webhook to the next supply chain node, issuing a cryptographic gate pass for the next arrival. |
-| **Kyoufuu (High Wind Limit)**<br>悪天候・強風作業制限 | `STATE_ENVIRONMENTAL_LOCK` | Global site constraint. Predictive GNN recalculates all ETA schedules, shifting deliveries mathematically rather than via manual phone calls. |
+    State -.->|Asynchronous API Webhook| Truck
+    PostGIS -.->|Update RCC8 Bounding Box| Zone
