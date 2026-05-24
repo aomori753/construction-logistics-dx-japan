@@ -104,7 +104,23 @@ graph TD
     TPM ===>|mTLS ECDSA Signed Payload| Kafka
     
     Kafka --> State
-    Kafka --> PostGIS
-    
-    State -.->|Asynchronous API Webhook| Truck
-    PostGIS -.->|Update RCC8 Bounding Box| Zone
+
+
+## 5. Operational State Mapping Lexicon / 運用状態マッピング語彙集
+
+To programmatically execute this Digital Twin, physical site conditions must be constrained to explicit enumerations (`Enums`) within the software architecture. Below is the formal mapping data dictionary, translating stochastic physical reality into deterministic, automated data flows.
+
+> このデジタルツインをプログラムで実行するためには、物理的な現場の状況をソフトウェアアーキテクチャ内の明示的な列挙型（`Enums`）に制約しなければなりません。以下は、物理的な現実を自動化されたデータフローへと変換する、本アーキテクチャの本質的なデータディクショナリ（語彙集）でございます。
+
+| Physical Site Condition<br>**(物理的な現場状況)** | Digital State Transition (`Enum`)<br>**(デジタル状態遷移)** | Algorithmic Consequence<br>**(アルゴリズムによる実行結果)** |
+| :--- | :--- | :--- |
+| **Machinery Idle / Engine Off**<br>重機待機中・エンジン停止 | `STATE_OFFLINE` | **Telemetry Ingestion Invalidation:**<br>Logistics routing APIs are instantly notified that the physical asset is offline and unavailable for inbound unloading sequences. |
+| **Tamagake (Slinging / Rigging)**<br>玉掛け作業中 | `STATE_EXECUTING_CRITICAL` | **Dynamic Spatial Lockout:**<br>The surrounding 3D geofence volume is instantly locked. All intersecting inbound vectors are dynamically rerouted to external buffer coordinates. |
+| **Zone Cleared / Material Dropped**<br>資材配置完了・エリア解放 | `STATE_ZONE_RELEASED` | **Asynchronous Token Propagation:**<br>Triggers a non-blocking webhook to the next supply chain node, generating and issuing a cryptographically signed gate-pass token for the next scheduled vehicle. |
+| **Kyoufuu (High Wind Limit)**<br>悪天候・強風作業制限 | `STATE_ENVIRONMENTAL_LOCK` | **Global Constraint Propagation:**<br>Triggers an automatic site-wide safety override. The cloud predictive GNN layer recalculates all upstream ETAs mathematically, removing human communication latency. |
+
+***
+
+<div align="center">
+  <p><strong>[ SYSTEM ARCHITECTURE BLUEPRINT // MOD-03-01 ]</strong></p>
+</div>
