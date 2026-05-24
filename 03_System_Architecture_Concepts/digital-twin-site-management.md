@@ -104,6 +104,10 @@ graph TD
     TPM ===>|mTLS ECDSA Signed Payload| Kafka
     
     Kafka --> State
+    Kafka --> PostGIS
+    
+    State -.->|Asynchronous API Webhook| Truck
+    PostGIS -.->|Update RCC8 Bounding Box| Zone
 
 
 ## 5. Operational State Mapping Lexicon / 運用状態マッピング語彙集
