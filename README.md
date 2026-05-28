@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏗️ Construction & Logistics DX Japan
+# Construction & Logistics DX Japan
 ## A Bilingual Systems Engineering Knowledge Framework
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=2000&color=38bdae&background=0D111700&center=true&vCenter=true&width=800&height=50&lines=INITIALIZING_MASTER_FRAMEWORK...;BRIDGING_PHYSICAL_GROUND_TRUTH_WITH_IT_ARCHITECTURE...;RESOLVING_JAPAN'S_2024_PROBLEM..." alt="System Initialization" />
