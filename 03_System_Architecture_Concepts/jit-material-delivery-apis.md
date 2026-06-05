@@ -73,3 +73,19 @@ As the heavy transport vehicle breaches the outer geofence of the site, localize
 > 大型輸送車両が現場の外部ジオフェンスを突破した瞬間、エッジ・コンピューティング・ノード（自動ナンバープレート認識 [ANPR] アルゴリズム、LiDAR空間追跡、およびBLEビーコンを統合）が車両のベクトルを捕捉いたします。エッジノードは、継続的に稼働するインメモリのステートマシンに対して、暗号学的署名を瞬時に認証いたします。トークンが数学的に有効であり、かつ目標となる荷降ろし用の空間ゾーンが `STATE_RELEASED`（解放状態）として登録されている場合、物理的なゲート・バリアおよび誘導インジケーターが、人間のAPI介入なしに自動的に作動いたします。このアーキテクチャのパラダイムは、「人間が介在する（Human-in-the-loop）」ボトルネックを完全に排除し、安全で継続的、かつゼロレイテンシの資材搬入を確約するのでございます。
 
 ---
+
+## 4. Algorithmic Pathfinding & Dynamic Internal Site Routing / アルゴリズムによる経路探索と動的場内ルーティング
+
+Upon successfully bypassing the perimeter gate via cryptographic authentication, a logistics vector enters a highly volatile, unstructured physical environment. Traditionally, internal site navigation relies entirely on human spotters (*Yudouin*) and analog signage. This heuristic methodology introduces severe operational and safety vulnerabilities. Human-machine proximity is the primary statistical catalyst for site fatalities, and human spotters are fundamentally incapable of calculating minute-by-minute topological shifts (e.g., the sudden establishment of a 3D exclusion zone due to active overhead crane rigging).
+
+To eradicate human-mediated navigation, this architecture implements Algorithmic Pathfinding. The internal construction site is mathematically mapped as a dynamic topological graph within the PostGIS spatial database. As the continuous in-memory state machine updates the operational status of internal geofences (e.g., transitioning a corridor to `STATE_LOCKED` due to a moving excavator), the edge weights within the routing graph are recalculated in real-time. 
+
+Applying advanced pathfinding algorithms (such as heuristic A* Search or Dijkstra's algorithm applied to time-variant graphs), the cloud infrastructure generates an optimal, collision-free internal trajectory. This dynamic routing payload is streamed directly to the delivery vector's onboard telematic interface via secure gRPC channels. The transport vehicle is guided to the precise Cartesian coordinates ($x, y, z$) of the designated unloading staging area without requiring a single human spotter. This architectural mechanism guarantees deterministic intra-site flow, completely eradicates pedestrian-vehicle clash risks, and mathematically minimizes the final-mile turnaround time (TAT).
+
+> 暗号学的な認証を経て現場の境界ゲートを無事に通過した後、物流ベクトルは極めて変動が激しく非構造化された物理環境へと進入いたします。従来、場内のナビゲーションは人間の誘導員（Yudouin）やアナログな標識に完全に依存してまいりました。しかしながら、このヒューリスティックな手法は、運用面および安全面において重大な脆弱性をもたらします。人間と重機の接近は現場における死亡事故の最大の統計的要因であり、さらに人間の誘導員は、分刻みで変化するトポロジーの変動（例：上空でのクレーンの玉掛け作業に伴う、3D立入禁止区域の突然の設定など）を計算することは原理的に不可能なためでございます。
+> 
+> 人間の介在によるナビゲーションを根絶するため、本アーキテクチャは「アルゴリズムによる経路探索（Algorithmic Pathfinding）」を実装いたします。内部の建設現場は、PostGIS空間データベース内の動的なトポロジカル・グラフとして数学的にマッピングされます。継続的に稼働するインメモリのステートマシンが内部ジオフェンスの稼働状況（例：稼働中の油圧ショベルによる通路の `STATE_LOCKED` への移行など）を更新するにつれ、ルーティング・グラフ内のエッジウェイト（重み）がリアルタイムで再計算されます。
+> 
+> 高度な経路探索アルゴリズム（時変グラフに適用されるヒューリスティックなA*探索やダイクストラ法など）を適用することにより、クラウドインフラストラクチャは衝突のない最適な場内軌道を生成いたします。この動的なルーティング・ペイロードは、セキュアなgRPCチャネルを介して配送ベクトルの車載テレマティクス・インターフェースへと直接ストリーミングされます。輸送車両は、人間の誘導員を一人も介することなく、指定された荷降ろし用ステージングエリアの正確なデカルト座標（$x, y, z$）へと誘導されます。このアーキテクチャ・メカニズムにより、決定論的な場内フローが保証され、歩行者と車両の接触リスク（クラッシュ・リスク）を完全に排除し、ラストマイルのターンアラウンド・タイム（TAT：折り返し時間）を数学的に最小化するのでございます。
+
+---
