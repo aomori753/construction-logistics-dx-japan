@@ -7,7 +7,7 @@
 
 > **Metadata:**
 > * **Module ID:** `MOD-03-ARCHITECTURE`
-> * **Status:** 🏗️ Under Development / 構築中
+> * **Status:** Under Development / 構築中
 > * **Author:** Jericho Ong / ジェリコ・オング (Construction & Logistics DX Independent Researcher)
 > * **Language:** English / Japanese (Advanced Technical Business / ビジネス技術日本語)
 
