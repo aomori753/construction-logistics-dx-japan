@@ -179,7 +179,7 @@ graph TD
 
 ---
 
-## 📂 Document Index / ドキュメント目次
+## Document Index / ドキュメント目次
 
 * 📄 **`digital-twin-site-management.md`**
   * **Focus:** Redefining the Digital Twin as an event-sourced, cyber-physical state machine built on Hybrid Automata Theory, converting manual *Chorei* scheduling into automated Pub/Sub data flows.
