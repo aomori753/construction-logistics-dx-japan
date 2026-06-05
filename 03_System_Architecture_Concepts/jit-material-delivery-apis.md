@@ -41,3 +41,19 @@ Because the incoming transport vehicle lacks real-time API integration with the 
 > 到着予定の輸送車両は、現場のライブなサイバーフィジカル状態（Live State）とのリアルタイムなAPI統合を欠いているため、盲目的に現場の境界（ゲート）へと到着いたします。待ち行列理論（Queueing Theory）を適用いたしますと、アルゴリズムによるバックプレッシャー（背圧）や動的なフロー制御メカニズムを伴わずにサービス時間の分散が増加した場合、局所的な待機列の長さは指数関数的に膨張いたします。この構造的な盲目性が、運送会社に壊滅的なアイドリング待機時間の吸収を強制し、極めて重要な資材を劣化させ、SLA（サービス品質保証）の遵守を破壊し、「2024年物流問題」という厳格な時間外労働規制下における国内物流ネットワークの崩壊を、積極的に加速させているのでございます。
 
 ---
+
+## 2. Dynamic Time-Window Allocation (DTA) & API-Driven "Pull" Orchestration / 動的タイムウィンドウ割り当て（DTA）とAPI駆動型「プル型」オーケストレーション
+
+To resolve the catastrophic failures of static push-scheduling, this architecture fundamentally inverts the supply chain paradigm. It transitions the construction ecosystem into a deterministic, API-driven "Pull" mechanism through **Dynamic Time-Window Allocation (DTA)**.
+
+Rather than assigning discrete, immovable timestamps ($t_0$) to inbound transport vectors, the Cyber-Physical State Machine continuously evaluates the live volumetric capacity of the PostGIS spatial grid. The delivery schedule is no longer a document; it is a high-frequency, continuously calculated API endpoint. When edge-telemetry confirms that a critical spatial node (e.g., Staging Area B) has successfully transitioned from `STATE_OCCUPIED` to `STATE_RELEASED`, the in-memory state machine dynamically calculates the precise temporal window available for the next ingestion event ($\Delta t_{available}$).
+
+Upon this state transition, the Apache Kafka message broker instantaneously broadcasts a secure webhook to the designated upstream logistics node (e.g., a transport provider's automated dispatch server or a driver's native edge-application). This API payload contains a highly specific, dynamically generated time-window token. Consequently, heavy transport vehicles do not blindly push toward the site perimeter; they are mathematically "pulled" into the physical geofence exclusively when the site's processing capacity is strictly verified by code. This algorithmic throttling completely eradicates localized queueing, standardizes Service Level Agreement (SLA) execution, and transforms stochastic physical logistics into a deterministic fluid network.
+
+> 静的なプッシュ型スケジューリングの壊滅的な破綻を解決するため、本アーキテクチャはサプライチェーンのパラダイムを根本から反転させます。すなわち、**「動的タイムウィンドウ割り当て（DTA: Dynamic Time-Window Allocation）」**を通じて、建設エコシステムを決定論的かつAPI駆動型の「プル型」メカニズムへと移行させるのでございます。
+> 
+> 到着予定の輸送ベクトルに対し、変更不可能で離散的なタイムスタンプ（$t_0$）を割り当てるのではなく、サイバーフィジカル・ステートマシンはPostGIS空間グリッドのリアルタイムな「体積的処理キャパシティ」を継続的に評価いたします。もはや搬入スケジュールは単なる文書ではなく、高頻度で継続的に計算される「APIエンドポイント」として機能します。エッジ・テレメトリーが、重要な空間ノード（例：ステージングエリアB）において `STATE_OCCUPIED`（占有状態）から `STATE_RELEASED`（解放状態）への状態遷移を正常に確認した瞬間、インメモリのステートマシンは次の搬入イベントに利用可能な正確な時間枠（$\Delta t_{available}$）を動的に計算いたします。
+> 
+> この状態遷移に基づき、Apache Kafkaメッセージブローカーは、指定された上流の物流ノード（運送会社の自動配車サーバーやドライバーのネイティブ・エッジアプリなど）に対して、セキュアなWebhookを瞬時にブロードキャストいたします。このAPIペイロードには、動的に生成された極めて特異的な「タイムウィンドウ・トークン」が含まれております。結果として、大型輸送車両は盲目的に現場の境界へ向かって「プッシュ」されることはありません。現場の処理能力がコードによって厳密に検証された場合にのみ、数学的に物理ジオフェンス内へと「プル（引き込み）」されるのでございます。このアルゴリズムによるスロットリング（流量制御）は、局所的な待機列を完全に根絶し、SLA（サービス品質保証）の実行を標準化し、確率論的な物理物流を決定論的な流体ネットワークへと変貌させます。
+
+---
