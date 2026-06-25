@@ -45,3 +45,19 @@ To mathematically evaluate this resilience, the system targets "Five Nines" (99.
 > このレジリエンスを数学的に評価するため、システムは「ファイブ・ナイン（99.999%）」のシステム可用性を目標としております。高可用性の定理である $A = \frac{\text{MTBF}}{\text{MTBF} + \text{MTTR}}$ （MTBF：平均故障間隔、MTTR：平均修復時間）を適用した場合、非同期のPostGISデータベース・レプリケーションと組み合わせたマルチAZ展開は、MTTR（修復時間）を人工的に「ミリ秒単位」まで押し下げます。この構造的な冗長性により、外部からのマクロ環境的なショックに関わらず、サイバーフィジカル・ステートマシンが継続的に稼働し続け、現場における壊滅的な物理的ボトルネックを未然に防ぐことが保証されるのでございます。
 
 ---
+
+## 2. VPC Isolation & Zero-Trust Edge Security Architecture / VPC分離とゼロトラスト・エッジセキュリティ・アーキテクチャ
+
+The proliferation of IoT edge devices across heavy civil engineering sites drastically expands the corporate attack surface. Legacy perimeter-based security models—such as statically provisioned VPNs—are fundamentally inadequate for modern Cyber-Physical Systems. In a high-threat landscape, a compromised physical sensor at the site perimeter must mathematically never serve as a vector for a lateral intrusion into the central Enterprise Resource Planning (ERP) database or the spatial BIM grid.
+
+To algorithmically mitigate this vulnerability, the entire cloud infrastructure is securely sandboxed within a strictly delineated Virtual Private Cloud (VPC). The core computational clusters—specifically the in-memory Cyber-Physical State Machine, the Apache Kafka message brokers, and the PostGIS relational databases—reside exclusively within heavily guarded Private Subnets. These deep-tier architectures are completely isolated from public internet gateways. Any outbound telemetry synchronization required for external API webhooks is strictly routed through deeply monitored NAT Gateways, rendering the core databases invisible to external port-scanning reconnaissance.
+
+Furthermore, the connection topology between external logistics vectors, edge-compute nodes, and the cloud backbone is strictly governed by Zero-Trust Network Access (ZTNA) principles. Every singular API call, dynamic Time-Window webhook, and IoT telemetry payload requires explicit cryptographic authentication via mutual TLS (mTLS) and dynamic AWS IAM (Identity and Access Management) token validation. Under this rigorous Zero-Trust paradigm, physical proximity to the construction site grants zero implicit network privileges. This architectural fortress completely eliminates the threat of ransomware-induced operational paralysis and guarantees absolute compliance with Japan's stringent national cybersecurity frameworks.
+
+> 重土木工学の現場におけるIoTエッジデバイスの急増は、企業の攻撃対象領域（アタックサーフェス）を劇的に拡大させます。静的にプロビジョニングされたVPNなど、従来の境界型セキュリティモデルは、現代のサイバーフィジカル・システムにおいては根本的に不十分でございます。脅威レベルの高い環境下において、現場境界で物理的センサーが侵害された場合であっても、それが中央のERP（企業資源計画）データベースや空間BIMグリッドへの水平展開（ラテラルムーブメント）の侵入ベクターとして機能することは、数学的に決して許されません。
+> 
+> この脆弱性をアルゴリズム的に軽減するため、クラウド・インフラストラクチャ全体は厳格に区画されたVPC（Virtual Private Cloud）内に安全にサンドボックス化されております。コアとなる計算クラスター——具体的には、インメモリのサイバーフィジカル・ステートマシン、Apache Kafkaメッセージブローカー、およびPostGISリレーショナル・データベース——は、厳重に保護されたプライベート・サブネット内にのみ配置されます。これらの深層層（ディープティア）のアーキテクチャは、パブリックなインターネットゲートウェイから完全に隔離されております。外部のAPI Webhookに必要なアウトバウンドのテレメトリー同期は、厳密に監視されたNATゲートウェイを経由してのみルーティングされるため、外部からのポートスキャン偵察に対してコアデータベースは完全に不可視となります。
+> 
+> さらに、外部の物流ベクトル、エッジコンピューティング・ノード、およびクラウド・バックボーン間の接続トポロジーは、ゼロトラスト・ネットワークアクセス（ZTNA）の原則によって厳格に統制されております。単一のAPIコール、動的タイムウィンドウのWebhook、およびIoTテレメトリーのペイロードのすべてにおいて、mTLS（相互TLS認証）および動的なAWS IAM（Identity and Access Management）トークン検証による明示的な暗号学的認証が要求されます。この厳格なゼロトラストのパラダイムにおいて、建設現場への「物理的な近接性」は暗黙のネットワーク権限を一切付与いたしません。このアーキテクチャ上の要塞は、ランサムウェアに起因する業務麻痺の脅威を完全に排除し、日本の厳格な国家サイバーセキュリティ・フレームワークへの絶対的な準拠を保証するのでございます。
+
+---
