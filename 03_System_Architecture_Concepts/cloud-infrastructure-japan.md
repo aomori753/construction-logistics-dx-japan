@@ -61,3 +61,20 @@ Furthermore, the connection topology between external logistics vectors, edge-co
 > さらに、外部の物流ベクトル、エッジコンピューティング・ノード、およびクラウド・バックボーン間の接続トポロジーは、ゼロトラスト・ネットワークアクセス（ZTNA）の原則によって厳格に統制されております。単一のAPIコール、動的タイムウィンドウのWebhook、およびIoTテレメトリーのペイロードのすべてにおいて、mTLS（相互TLS認証）および動的なAWS IAM（Identity and Access Management）トークン検証による明示的な暗号学的認証が要求されます。この厳格なゼロトラストのパラダイムにおいて、建設現場への「物理的な近接性」は暗黙のネットワーク権限を一切付与いたしません。このアーキテクチャ上の要塞は、ランサムウェアに起因する業務麻痺の脅威を完全に排除し、日本の厳格な国家サイバーセキュリティ・フレームワークへの絶対的な準拠を保証するのでございます。
 
 ---
+
+
+## 3. Serverless Edge-to-Cloud Ingestion Pipeline / サーバーレス・エッジ・トゥ・クラウド・データインジェストパイプライン
+
+Heavy civil logistics inherently operate on highly volatile spatiotemporal density curves. During peak operational windows—such as the synchronous morning dispatch of ready-mix concrete fleets or structural steel deliveries—the physical site generates an avalanche of high-frequency telemetry (GPS coordinates, payload mass, hydraulic PTO status). Provisioning static, monolithic compute clusters (e.g., fixed EC2 instances) to handle these transient volumetric spikes is fundamentally inefficient. It mathematically guarantees either systemic latency during peak ingestion or catastrophic financial waste (OpEx bleeding) during inactive nocturnal periods.
+
+To master this volatility, the architecture implements a purely event-driven, Serverless Ingestion Pipeline. Heavy transport vectors and active machinery utilize lightweight Publish-Subscribe protocols (specifically MQTT) to stream continuous telemetry to a managed edge gateway (e.g., AWS IoT Core). To permanently insulate the core PostGIS relational databases from connection exhaustion (database asphyxiation), all incoming raw data streams are strictly buffered through high-throughput, distributed event brokers (e.g., Amazon Kinesis Data Streams or managed Apache Kafka).
+
+Subsequently, ephemeral, auto-scaling compute functions (e.g., AWS Lambda) are mathematically triggered to consume these data shards. These micro-functions instantaneously validate the cryptographic Zero-Trust signatures, filter spatial anomalies, and parse the data before committing state changes to the Cyber-Physical State Machine. Because this serverless paradigm elastically scales from absolutely zero to tens of thousands of concurrent executions per microsecond, it guarantees absolute data fidelity during massive congestion events, while simultaneously driving cloud operational expenditures to a strictly consumption-based minimum.
+
+> 重土木物流は、本質的に極めて変動の激しい時空間密度のカーブ上で稼働しております。生コンクリート車両のフリートや鉄骨搬入が同期する「朝の配車ラッシュ」など、ピーク時の稼働時間帯において、物理的な現場は高頻度なテレメトリー（GPS座標、積載質量、油圧PTOの稼働状況など）の雪崩（アバランチ）を発生させます。これらの過渡的かつ膨大なデータスパイクを処理するために、静的でモノリシックな計算クラスター（固定のEC2インスタンスなど）をプロビジョニングすることは根本的に非効率でございます。それは数学的に、ピーク処理時におけるシステム全体のレイテンシ（遅延）、あるいは稼働のない夜間帯における壊滅的な財務的浪費（OpExの流出）のいずれかを必然的にもたらします。
+> 
+> この変動性を完全に制御するため、本アーキテクチャは完全なイベント駆動型である「サーバーレス・データインジェスト（取り込み）・パイプライン」を実装いたします。大型輸送ベクトルおよび稼働中の重機は、軽量なパブリッシュ・サブスクライブ型プロトコル（具体的にはMQTT）を利用して、継続的なテレメトリーをマネージド・エッジゲートウェイ（AWS IoT Coreなど）へとストリーミングいたします。中核となるPostGISリレーショナル・データベースを接続枯渇（データベースの窒息状態）から恒久的に保護するため、流入するすべての生データストリームは、高スループットの分散型イベントブローカー（Amazon Kinesis Data StreamsやマネージドApache Kafkaなど）を通じて厳格にバッファリングされます。
+> 
+> その後、一時的（エフェメラル）かつオートスケーリング可能な計算関数（AWS Lambdaなど）が数学的にトリガーされ、これらのデータシャードを消費（処理）いたします。これらのマイクロ関数は、サイバーフィジカル・ステートマシンへの状態変更をコミットする前に、暗号学的なゼロトラスト署名を瞬時に検証し、空間的な異常値をフィルタリングし、データをパース（解析）いたします。このサーバーレス・パラダイムは、「完全なゼロ」から「毎マイクロ秒数万件」の同時実行へと弾力的にスケールするため、大規模なトラフィックの輻輳（ふくそう）時における絶対的なデータの忠実性（フィデリティ）を保証すると同時に、クラウド運用のオペレーティング費用（OpEx）を厳密な「従量課金ベースの最小値」へと抑え込むのでございます。
+
+---
