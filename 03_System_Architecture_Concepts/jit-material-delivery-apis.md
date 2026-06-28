@@ -9,7 +9,7 @@
 > * **Document ID:** `MOD-03-03-JIT-LOGISTICS`
 > * **Project:** System Architecture Blueprint
 > * **Status:** Active Specification / 仕様確定
-> * **Author:** Jericho T. Ong / ジェリコ・タホネラ・オン (Construction & Logistics DX Independent Researcher)
+> * **Author:** Jericho Ong / ジェリコ・オング (Construction & Logistics DX Independent Researcher)
 > * **Language:** English / Japanese (Advanced Technical Business / ビジネス技術日本語)
 
 ---
