@@ -105,5 +105,5 @@ Ultimately, `MOD-03-05` completes the fifth and final structural pillar of the c
 ***
 <div align="center">
   <p><strong>[ SYSTEM ARCHITECTURE BLUEPRINT // MOD-03-05 // END OF DOCUMENT ]</strong></p>
-  <p><em>Cyber-Physical Architecture Series 03: Fully Sealed & Verified</em></p>
+  <p><em>Cyber-Physical Architecture Series 03 </em></p>
 </div>
