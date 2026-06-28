@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>IoT Sensor Networks & Edge Telemetry (Genba)</h1>
+  <h1>IoT Sensor Networks & Edge Telemetry </h1>
   <h3>建設現場におけるIoTセンサーネットワークとエッジテレメトリー基盤</h3>
 </div>
 
