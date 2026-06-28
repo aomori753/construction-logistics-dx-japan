@@ -37,3 +37,20 @@ To mathematically guarantee spatial truth, the system establishes a strict **Spa
 > 空間的な真実性を数学的に保証するため、本システムは厳格な**「空間許容誤差バジェット（$\epsilon_{space} \le \pm 15\text{mm}$）」**を設定いたします。センサー固有のユークリッド座標系 $\{S\}$ で取得された生テレメトリーは、絶対座標である「日本測地系2011（JGD2011）平面直角座標系 $\{W\}$」へと継続的に変換されなければなりません。未校正の推測航法（デッドレコニング）に依存するのではなく、各エッジノードは6自由度（6-DoF）慣性計測装置（IMU）のテレメトリーと、リアルタイムキネマティック（RTK）GNSS補正値を融合させる「拡張カルマンフィルタ（EKF）」を実行いたします。この決定論的な空間アンカリングにより座標ドリフトを根絶し、サイバーフィジカル・ステートマシンが物理的資産をBIM/CIMデジタルツインへと、測量士レベル（サーベイヤージュレード）の絶対的な厳格さをもってマッピングすることを確約するのでございます。
 
 ---
+
+
+## 2. Multi-Modal RF Spectrum Agility & Deterministic Store-and-Forward Routing / マルチモーダルRFスペクトル・アジリティと決定論的ストア・アンド・フォワード・ルーティング
+
+The physical topology of a heavy civil site is not static; it is a dynamically mutating Radio Frequency (RF) landscape. The rapid erection of structural steel grids and the continuous pouring of high-density concrete introduce severe RF attenuation and unpredictable signal shadowing. Relying on a monolithic macro-cellular network (standard 4G/LTE) guarantees catastrophic telemetry packet loss when logistics vectors or robotic assets descend into deep subterranean excavations or navigate through rebar-dense corridors.
+
+To mathematically guarantee an unbroken edge-to-cloud data stream, the architecture implements an autonomous "Multi-Modal Spectrum Agility" matrix. High-frequency, high-bandwidth payloads that require line-of-sight (e.g., LiDAR point clouds and real-time machine vision vectors) are dynamically routed via localized Private 5G (Local 5G / Sub-6GHz) networks. Conversely, mission-critical, low-bandwidth telemetry (e.g., structural stress-strain gauges, deep-foundation piezometers, and worker BLE vital-monitors) utilizes the 920MHz LPWAN (LoRaWAN) spectrum. This sub-Gigahertz frequency mathematically guarantees superior physical penetration through curing concrete walls and deep-basement topologies, ensuring absolute zero-blind-spot coverage across the *Genba*.
+
+Furthermore, transient network disconnections are engineered out of the failure matrix; they are treated as expected physical states. Each mobile edge-gateway is equipped with an internal, lightweight event broker (e.g., MQTT Mosquitto) executing a deterministic "Store-and-Forward" protocol. If a mobile asset (e.g., a JIT delivery truck) experiences a temporary RF blackout behind a crawler crane, the edge-node buffers the serialized telemetry locally on industrial NVMe solid-state storage. The precise microsecond the network handshake is re-established, the buffered payload is seamlessly synchronized with the cloud via temporal backfilling. This strictly ensures that the Cyber-Physical State Machine’s spatiotemporal historical timeline remains absolutely flawless, with zero dropped packets.
+
+> 重土木工学の物理的トポロジーは静的なものではなく、動的に変異し続けるRF（無線周波数）ランドスケープでございます。鉄骨グリッドの急速な構築や、高密度コンクリートの継続的な打設は、深刻なRF減衰と予測不可能なシグナル・シャドウイング（電波遮蔽）を引き起こします。単一のマクロセルラー・ネットワーク（標準的な4G/LTE）に依存することは、物流ベクトルやロボティクス資産が地下深部の掘削現場へ降下した際、あるいは鉄筋が密集する通路を航行する際において、壊滅的なテレメトリー・パケットの損失を数学的に不可避といたします。
+> 
+> 途切れることのないエッジからクラウドへのデータストリームを数学的に保証するため、本アーキテクチャは自律的な「マルチモーダル・スペクトル・アジリティ（周波数帯の動的切り替え）」マトリックスを実装いたします。見通し線（Line-of-Sight）を必要とする高周波・高帯域幅のペイロード（LiDAR点群やリアルタイムなマシンビジョン・ベクトルなど）は、局所化されたプライベート5G（ローカル5G / Sub-6GHz）ネットワークを経由して動的にルーティングされます。対照的に、ミッションクリティカルかつ低帯域幅のテレメトリー（構造物の応力・ひずみゲージ、深層基礎の間隙水圧計、作業員のBLEバイタルモニターなど）は、920MHz帯のLPWAN（LoRaWAN）スペクトルを活用いたします。このサブギガヘルツの周波数は、硬化中のコンクリート壁や深層地下トポロジーに対する優れた物理的透過性を数学的に保証し、現場（Genba）全体における「完全な死角ゼロ（ゼロ・ブラインドスポット）」のカバレッジを確約いたします。
+> 
+> さらに、一時的なネットワークの切断は障害マトリックスから完全に排除され、想定された「物理的状態」として処理されます。各モバイル・エッジ・ゲートウェイには、決定論的な「ストア・アンド・フォワード」プロトコルを実行する軽量な内部イベントブローカー（MQTT Mosquittoなど）が装備されております。JIT搬入トラックなどの移動資産が、クローラークレーンの背後等で一時的なRFブラックアウト（通信途絶）に陥った場合、エッジノードはシリアライズされたテレメトリーを産業用NVMeソリッドステート・ストレージにローカルでバッファリングいたします。ネットワークのハンドシェイクが再確立された正確なマイクロ秒において、バッファリングされたペイロードは時間的なバックフィル（遡及的補完）を通じてクラウドとシームレスに同期されます。これにより、サイバーフィジカル・ステートマシンの時空間的な履歴タイムラインにおいて、パケットロスが「ゼロ」の状態で絶対的に無傷（フローレス）であり続けることが厳密に保証されるのでございます。
+
+---
