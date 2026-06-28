@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>TIER 04: Construction & Logistics Intersection</h1>
+  <h1>Module 04: Construction & Logistics Intersection</h1>
   <h3>建設物流交差領域：物理オペレーションと経済学の決定論的モデリング</h3>
   <p><em>Applied Operations Research, Site Physics, and Unit Economics</em></p>
 </div>
