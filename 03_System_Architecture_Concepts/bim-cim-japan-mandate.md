@@ -8,8 +8,8 @@
 > **Metadata:**
 > * **Document ID:** `MOD-03-02-BIM-CIM-MANDATE`
 > * **Project:** System Architecture
-> * **Status:** 🏗️ Active Specification / 仕様確定
-> * **Author:** Jericho T. Ong / ジェリコ・タホネラ・オン (Construction & Logistics DX Independent Researcher)
+> * **Status:** Active Specification / 仕様確定
+> * **Author:** Jericho Ong / ジェリコ・オング (Construction & Logistics DX Independent Researcher)
 > * **Language:** English / Japanese (Advanced Technical Business / ビジネス技術日本語)
 
 ---
