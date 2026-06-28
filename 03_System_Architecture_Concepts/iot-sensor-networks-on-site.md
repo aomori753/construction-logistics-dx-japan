@@ -71,3 +71,19 @@ This asymmetrical compute distribution reduces edge-to-cloud network overhead by
 > この非対称な計算処理の分散により、エッジからクラウドへのネットワークのオーバーヘッドが99%以上削減されます。大規模かつ多次元のデータストリームを、軽量で忠実度の高い「状態ベクトル」へと数学的に圧縮（コラプス）することにより、本アーキテクチャは中央のサイバーフィジカル・ステートマシンを無意味なテレメトリーのノイズから恒久的に隔離し、現場全体における決定論的かつゼロ・レイテンシのオーケストレーションを確約するのでございます。
 
 ---
+
+## 4. Worker Telemetry & Cryptographic Privacy Enclaves / 作業員テレメトリーと暗号学的プライバシー・エンクレーブ
+
+In high-density civil operations, the spatiotemporal intersection of human workers and heavy machinery is the primary vector for fatal anomalies. Consequently, high-frequency spatial tracking of the workforce is an operational imperative. However, continuous biometric or identifiable spatial surveillance inherently conflicts with the strict data privacy mandates of the Japanese Act on the Protection of Personal Information (APPI / 改正個人情報保護法) and labor union regulations. 
+
+To resolve this paradox, the architecture strictly divorces spatial telemetry from human identity using Cryptographic Privacy Enclaves. Workers are equipped with Ultra-Wideband (UWB) or BLE smart-nodes embedded in their safety helmets. These edge-nodes do not broadcast fixed MAC addresses or personnel IDs. Instead, they broadcast rotating, ephemeral cryptographic hashes (e.g., changing every 60 seconds). To the overarching cloud infrastructure, the worker is not a named entity, but simply an anonymized, moving coordinate in the $x,y,z$ matrix.
+
+Safety enforcement occurs dynamically at the edge. Heavy machinery (e.g., a hydraulic excavator) casts a computationally generated "Dynamic Kinematic Exclusion Zone" based on its swing radius and velocity vectors. If an anonymous worker node breaches this critical safety radius ($d < r_{critical}$), the machine's local edge-controller bypasses the cloud entirely and fires a localized, sub-millisecond interrupt directly to the machine's CAN bus, instantly halting the hydraulic actuators. The identity of the worker is mathematically unmaskable to the system, and can only be decrypted retroactively by an air-gapped, multi-signature audit terminal held exclusively by the Chief Safety Officer (*Anzen Taishousha*) in the event of a forensic MLIT investigation. This zero-knowledge approach guarantees absolute physical safety without compromising a single millimeter of legal privacy.
+
+> 高密度の土木作業において、人間の作業員と重機の時空間的な交差は、致命的な異常事態（死亡事故等）を引き起こす最大の要因（ベクトル）でございます。したがって、労働力の高頻度な空間トラッキングは運用上の絶対的急務となります。しかしながら、継続的な生体監視や個人を特定可能な空間監視は、日本の「改正個人情報保護法（APPI）」および労働組合の規制が定める厳格なデータ・プライバシーの要請と根本的に相反いたします。
+> 
+> このパラドックスを解決するため、本アーキテクチャは「暗号学的プライバシー・エンクレーブ」を用いて、空間テレメトリーと人間のアイデンティティ（身元）を厳格に分離いたします。作業員は、安全ヘルメットに組み込まれた超広帯域無線（UWB）またはBLEスマートノードを装備いたします。これらのエッジノードは、固定のMACアドレスや個人IDをブロードキャストいたしません。代わりに、ローテーションする一時的（エフェメラル）な暗号学的ハッシュ（例：60秒ごとに更新）をブロードキャストいたします。上位のクラウド・インフラストラクチャにとって、作業員は名前を持った実体ではなく、$x,y,z$ マトリックス上を移動する「匿名化された座標」に過ぎません。
+> 
+> 安全性の強制執行は、エッジ側で動的に行われます。重機（油圧ショベルなど）は、自身の旋回半径と速度ベクトルに基づき、計算処理によって生成された「動的・運動学的排他ゾーン（立入禁止領域）」を投影いたします。匿名の作業員ノードがこの極めて重要な安全半径を突破した場合（$d < r_{critical}$）、重機側のローカル・エッジコントローラーはクラウドを完全にバイパスし、重機のCANバスへ直接「サブミリ秒の割り込み（インタラプト）」を発火させ、油圧アクチュエータを瞬時に停止（ホルト）させます。作業員の身元はシステムに対して数学的に秘匿（アンマスク不可）されており、国土交通省（MLIT）のフォレンジック調査が発生した場合にのみ、安全統括責任者（安全管理者）が独占的に管理するエアギャップされたマルチシグネチャ（複数署名）監査端末によって、事後的に復号することが可能となります。このゼロ知識証明（ゼロ知識アプローチ）により、法的なプライバシーを1ミリたりとも侵害することなく、絶対的な物理的安全性を保証するのでございます。
+
+---
