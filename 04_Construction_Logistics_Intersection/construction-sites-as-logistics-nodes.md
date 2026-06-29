@@ -60,3 +60,28 @@ When legacy procurement schedules push material to the site based on *subcontrac
 > 従来の調達スケジュールが、リアルタイムな $B(t)$ の値ではなく、「下請け業者の注文書（POベース）」に基づいて資材を現場へプッシュした場合、致命的なフェイラー・ステート（障害状態）が発生いたします：$\int (\Phi_{in} - \Psi_{install}) > B(t)$。物理的な物質が、すでに構築されたコンクリート耐震壁と同じユークリッド座標を占有することは不可能であるため、溢れ出た資材は現場ゲートの境界線の外側へと流出いたします。過密な日本の都市部において、これは瞬時に「主要幹線道路の封鎖」として顕在化し、管轄警察署（丸の内署や葛飾署等）からの重大な行政処分を誘発し、プロジェクト全体を停止へ追い込むのでございます。
 
 ---
+
+
+## 2. The Site Gate as a Stochastic M/M/s Queuing Bottleneck / 確率論的M/M/s待ち行列ボトルネックとしての現場ゲート
+
+A heavy civil construction gate is not a passive threshold; it is a highly constrained processing server subject to strict stochastic queuing dynamics. Traditional dispatch software models truck arrivals as deterministic, perfectly timed events. However, urban traffic friction dictates that arrivals inherently follow a Poisson distribution (average arrival rate $\lambda$), while the variable physical complexity of unloading operations (e.g., hoisting a 5-ton precast concrete column versus unloading a pallet of drywall) dictates that service times approximate an Exponential distribution (average service rate $\mu$). 
+
+Assuming the site possesses $s$ concurrent unloading bays (governed by the number of active tower crane hooks or ground forklifts), the physical site gate operates strictly as an **$M/M/s$ Queuing System**. The absolute critical threshold of site stability is defined by the utilization factor $\rho$:
+
+$$\rho = \frac{\lambda}{s\mu}$$
+
+If a legacy procurement schedule blindly pushes the arrival rate $\lambda$ such that the utilization factor approaches unity ($\rho \to 1$), the expected queue length $L_q$ expands asymptotically to infinity. In the physical reality of dense urban Japan, this "mathematical infinity" translates instantaneously into kilometers of idling 10-ton trucks backing up onto major municipal arteries (e.g., National Route 246 or the Shuto Expressway). This catastrophic overflow constitutes a direct violation of the Japanese Road Traffic Act (*Doro Kotsu Ho* / 道路交通法), immediately triggering police intervention and halting all site operations.
+
+To prevent this systemic collapse, this architecture applies **Little’s Law** ($L = \lambda W$, where $L$ is the total number of vehicles in the system and $W$ is the total wait time) to dynamically throttle the inbound logistics vectors. By feeding the real-time, empirical service rate $\mu$ of the active crane hooks (captured via the Edge-AI telemetry in `MOD-03-05`) back into the Cloud API orchestration layer (`MOD-03-03`), the system autonomously modulates the dispatch arrival rate $\lambda$. This closed-loop mathematical governance ensures $\rho$ remains strictly $\le 0.85$, structurally guaranteeing that terminal mass accumulation never exceeds the physical perimeter of the *Genba*.
+
+> 重土木の現場ゲートは、単なる受動的な境界線ではございません。厳格な確率論的待ち行列（キューイング）力学に支配された、極めて制約の厳しい「処理サーバー」でございます。従来の配車ソフトウェアは、トラックの到着を「完全にスケジュールされた決定論的イベント」としてモデル化いたします。しかしながら、都市交通の摩擦により、実際の到着は本質的に「ポアソン分布（平均到着率 $\lambda$）」に従います。同時に、荷下ろし作業の物理的複雑さのばらつき（例：5トンのプレキャスト・コンクリート柱の吊り上げと、石膏ボードのパレットの荷下ろしとの差）により、サービス時間（処理時間）は「指数分布（平均サービス率 $\mu$）」に近似いたします。
+> 
+> 現場が $s$ 個の同時荷下ろしベイ（稼働中のタワークレーンのフック数、または地上フォークリフトの数によって統制される）を有すると仮定した場合、物理的な現場ゲートは厳格に**「M/M/s 待ち行列システム」**として機能いたします。現場の安定性を分かつ絶対的な臨界閾値は、利用率（トラフィック密度）$\rho$ によって定義されます：
+> 
+> $$\rho = \frac{\lambda}{s\mu}$$
+> 
+> 従来の調達スケジュールが盲目的に到着率 $\lambda$ を押し上げ、利用率が「1」に近づいた場合（$\rho \to 1$）、予想される待ち行列の長さ $L_q$ は漸近的に無限大へと発散いたします。過密な日本の都市部という物理的現実において、この「数学的な無限大」は、主要な都市幹線道路（国道246号線や首都高速道路など）へと数キロメートルにわたって逆流する「10トントラックのアイドリング渋滞」として瞬時に顕在化いたします。この壊滅的なオーバーフローは、日本の「道路交通法」への直接的な違反を構成し、即座に警察の介入を招き、現場の全作業を停止させることとなります。
+> 
+> このシステム全体の崩壊（システミック・コラプス）を防ぐため、本アーキテクチャは**「リトルの法則」**（$L = \lambda W$：システム内の総車両数 $L$ は、到着率 $\lambda$ と平均滞在時間 $W$ の積に等しい）を適用し、流入する物流ベクトルを動的にスロットリング（流量制御）いたします。稼働中のクレーンフックから得られるリアルタイムかつ経験的なサービス率 $\mu$ （`MOD-03-05`のエッジAIテレメトリー経由で取得）を、クラウドAPIオーケストレーション層（`MOD-03-03`）へとフィードバックすることにより、システムは配車到着率 $\lambda$ を自律的に変調させます。この閉ループ（クローズドループ）の数学的統治により、利用率 $\rho$ を厳密に「0.85以下」に維持し、終着点の質量蓄積が現場（Genba）の物理的境界を決して超えないことを構造的に保証するのでございます。
+
+---
