@@ -63,16 +63,35 @@ The architectural necessity for technological intervention is driven by three im
 
 ---
 
-## 3. Module Roadmap and File Taxonomy / モジュール構成と文書分類
+## 📂 3. Module Roadmap and File Taxonomy / モジュール構成と文書分類
 
-The four core documents comprising this module are engineered to be consumed sequentially. Each text builds upon the analytical foundation established by its predecessor, constructing a logical progression from legislative origin, through sectoral impact and systemic intersection, culminating in policy mandates.
+The four core documents comprising this module are engineered to be consumed sequentially. Each text builds upon the analytical foundation established by its predecessor, constructing a logical progression from legislative origin, through sectoral impact and systemic intersection, culminating in rigid policy mandates. Rather than a fragmented collection of industry observations, this directory serves as a cohesive requirements definition matrix. It begins by parameterizing the throughput failure, moves to quantify the demographic collapse of the supervisory workforce, mathematically models the volatility of the logistics endpoint, and concludes by mapping these constraints directly against national governmental directives.
 
-| Document / 文書 | Systems Engineering Focus / システム工学的焦点 | Standard |
-| :--- | :--- | :--- |
-| `2024-problem-overview.md` | **Throughput Analysis:** Detailing how legislative overtime caps systematically dismantle the informal analog buffer systems upon which both construction and logistics sectors have historically depended. | PhD Level |
-| `construction-labor-impact.md` | **Resource Constraint Modeling:** Quantifying the collapse of the supervisory ratio and theorizing the permanent loss of master-level (Takumi) operational knowledge under demographic and regulatory pressures. | PhD Level |
-| `logistics-supply-chain-bottlenecks.md` | **Endpoint Volatility Analysis:** Mathematically modeling the construction site gate as a dynamic, unmanaged logistics endpoint, examining the compounding failure rates when dual-constrained systems intersect. | PhD Level |
-| `japan-dx-policy-landscape.md` | **Compliance Architecture:** Mapping the Ministry of Land, Infrastructure, Transport and Tourism (MLIT) i-Construction mandates, IPA security standards, and national DX policy frameworks directly to executable technical system requirements. | PhD Level |
+> 本モジュールを構成する4つの主要文書は、順を追って読み進められるよう工学的に設計されております。各文書は、先行するテキストによって確立された分析基盤の上に構築され、法制化の起源から始まり、セクターへの影響、システム間の交差を経て、最終的に厳格な政策的義務付けへと至る論理的な進行を形成します。本ディレクトリは、断片的な業界観察の寄せ集めではなく、首尾一貫した要件定義マトリックスとして機能いたします。具体的には、まずスループットの障害をパラメータ化し、次に監督労働力の人口動態的な崩壊を定量化し、物流エンドポイントの揮発性を数学的にモデル化した上で、最後にこれらの制約を国家政府の指令と直接的にマッピングすることで完結いたします。
+
+### `2024-problem-overview.md`: Throughput Analysis / スループット分析
+
+This document details how legislative overtime caps systematically dismantle the informal analog buffer systems upon which both the construction and logistics sectors have historically depended. It establishes the absolute quantitative baseline of the capacity deficit, proving why manual scheduling heuristics can no longer physically scale.
+
+> 本文書は、法的な時間外労働の上限設定が、建設および物流の両セクターが歴史的に依存してきた非公式なアナログの緩衝（バッファー）システムをいかにして体系的に解体するかを詳述いたします。ここではキャパシティ不足の絶対的な定量的ベースラインを確立し、手動によるスケジューリングの経験則が物理的にもはや拡張不可能である理由を証明いたします。
+
+### `construction-labor-impact.md`: Resource Constraint Modeling / リソース制約モデリング
+
+This analysis quantifies the collapse of the supervisory ratio on physical sites. It theorizes the permanent loss of master-level operational knowledge under current demographic pressures, explicitly translating this epistemological loss into a hard structural requirement for physical artificial intelligence and cognitive automation.
+
+> 本分析は、物理的な現場における監督比率の崩壊を定量化いたします。現在の人口動態的圧力下における熟練レベルの運用知識の恒久的な喪失を理論化し、この認識論的喪失を、フィジカルAIおよび認知的自動化に対する強固な構造的要件へと明確に変換いたします。
+
+### `logistics-supply-chain-bottlenecks.md`: Endpoint Volatility Analysis / エンドポイントの揮発性分析
+
+This text mathematically models the construction site gate as a dynamic, unmanaged logistics endpoint. It examines the compounding failure rates that emerge when two independently constrained supply chain networks intersect without deterministic, machine-to-machine digital synchronization.
+
+> 本文書は、建設現場のゲートを、動的かつ管理されていない物流エンドポイントとして数学的にモデル化いたします。決定論的かつマシン・ツー・マシン（M2M）のデジタル同期なしに、二つの独立して制約されたサプライチェーン・ネットワークが交差する際に生じる複合的な障害発生率を検証いたします。
+
+### `japan-dx-policy-landscape.md`: Compliance Architecture / コンプライアンス・アーキテクチャ
+
+The final document maps the Ministry of Land, Infrastructure, Transport and Tourism mandates, Information-technology Promotion Agency security standards, and national digital transformation frameworks directly to executable technical system requirements. This mapping ensures that all proposed cyber-physical architectures remain strictly legal and fully compliant with Japanese sovereign infrastructure directives.
+
+> 最終文書では、国土交通省（MLIT）の指令、情報処理推進機構（IPA）のセキュリティ基準、および国家的なデジタルトランスフォーメーションのフレームワークを、実行可能な技術的システム要件に直接マッピングいたします。このマッピングにより、提案されるすべてのサイバーフィジカル・アーキテクチャが、日本の主権的なインフラ指令に対して厳密に合法かつ完全にコンプライアンスを満たすことを保証いたします。
 
 ---
 
