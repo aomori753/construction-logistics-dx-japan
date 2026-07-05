@@ -1,41 +1,50 @@
-# Module 01: Industry Crisis Analysis / 業界の危機分析
-## Defining the "Problem Space" for Systems Architecture / システムアーキテクチャのための「問題領域」の定義
+<div align="center">
+  <h1>Module 01: Industry Crisis Analysis</h1>
+  <h3>業界の危機分析：システムアーキテクチャのための「問題領域」の定義</h3>
+</div>
 
-**Repository:** `construction-logistics-dx-japan`
-**Module Status:** Active — Living Document
-**Language:** English and Japanese (Business Keigo / 最高敬語)
+<br>
 
-> "You cannot architect a solution to a problem you have not yet precisely defined. This module constitutes that precise definition."  
-> 「問題を精確に定義することなく、解決策を設計することはできません。本モジュールは、その精確な定義そのものでございます。」
+> **Metadata:**
+> * **Module ID:** `MOD-01-CRISIS-ANALYSIS`
+> * **Status:** Active — Living Document / 運用中（継続的更新）
+> * **Author:** Jericho Ong / ジェリコ・オング (Construction & Logistics DX Independent Researcher)
+> * **Language:** English / Japanese (Advanced Technical Business Keigo / ビジネス技術最高敬語)
 
 ---
 
-> **Global Research and Policy Compliance Disclaimer / 全体的な研究およびコンプライアンスに関する免責事項**
-> 
-> This module represents an independent research and self-development framework authored by Jericho Ong, a construction operations professional actively transitioning into information technology architecture within Japan. All analyses draw exclusively from publicly available government publications, industry association reports, academic literature, and 13 years of direct operational field experience managing large-scale civil projects in the Philippines. 
-> 
-> This documentation does not represent any government body, regulatory institution, or corporate employer in the Philippines or Japan. Furthermore, it does not constitute official legal, regulatory, structural engineering, or professional advice under the jurisdiction of either nation. All referenced statistics and policy details are synthesized from primary public sources and are intended strictly for educational discourse, portfolio development, and systems engineering research.
-> 
-> 本モジュールは、日本国内において情報技術アーキテクチャ分野へのキャリア転換を積極的に進めている建設業オペレーションの専門家、ジェリコオング（Jericho Ong）が独自に構築した研究および自己研鑽のフレームワークでございます。すべての分析は、政府刊行物、業界団体報告書、学術文献といった公開情報、およびフィリピンにおける大規模土木プロジェクトの管理に関する13年間の直接的な現場経験にのみ基づいております。
+> *"You cannot architect a solution to a problem you have not yet precisely defined. This module constitutes that precise definition."*
+> — **「問題を精確に定義することなく、解決策を設計することは不可能です。本モジュールは、その精確な定義そのものでございます。」**
+
+---
+
+## 🏛️ Global Research and Policy Compliance Disclaimer / 全体的な研究およびコンプライアンスに関する免責事項
+
+This module represents an independent research and self-development framework authored by Jericho Ong, a construction operations professional actively transitioning into information technology architecture within Japan. All analyses draw exclusively from publicly available government publications, industry association reports, academic literature, and 13 years of direct operational field experience managing large-scale civil projects in the Philippines.
+
+This documentation does not represent any government body, regulatory institution, or corporate employer in the Philippines or Japan. Furthermore, it does not constitute official legal, regulatory, structural engineering, or professional advice under the jurisdiction of either nation. All referenced statistics and policy details are synthesized from primary public sources and are intended strictly for educational discourse, portfolio development, and systems engineering research.
+
+> 本モジュールは、日本国内において情報技術アーキテクチャ分野へのキャリア転換を積極的に進めている建設業オペレーションの専門家、ジェリコ・オング（Jericho Ong）が独自に構築した研究および自己研鑽のフレームワークでございます。すべての分析は、政府刊行物、業界団体報告書、学術文献といった公開情報、およびフィリピンにおける大規模土木プロジェクトの管理に関する13年間の直接的な現場（グラウンド・トゥルース）経験にのみ基づいております。
 > 
 > 本文書は、フィリピンおよび日本のいかなる政府機関、規制機関、または企業雇用主を代表するものではございません。さらに、両国の管轄下における公式な法的、規制的、構造工学的、または専門的な助言を構成するものでもございません。参照されているすべての統計および政策の詳細は、一次公開情報から統合されたものであり、厳密に教育的議論、ポートフォリオ構築、およびシステムズエンジニアリング研究を目的としております。
 
 ---
 
-## 1. Mission Alignment and Epistemological Foundation / リサーチミッションと認識論的基盤
+## 🎯 1. Mission Alignment and Epistemological Foundation / リサーチミッションと認識論的基盤
 
-The overarching mission of this repository is to engineer a structural bridge between "Ground Truth" (the physical realities of construction operations) and Digital Architecture (the data structures required to optimize those operations). 
+The overarching mission of this repository is to engineer a structural bridge between **"Ground Truth"** (the physical realities of construction operations) and **Digital Architecture** (the data structures required to optimize those operations).
 
-Within this systems engineering framework, Module 01 functions strictly as the **"Requirements Discovery"** phase. In professional systems architecture, it is fundamentally irresponsible to design technological solutions without first mathematically and empirically quantifying the structural failures, legislative constraints, and demographic pressures of the target operational environment. Technology deployed without an accurate problem definition inevitably becomes an expensive liability rather than an asset.
+Within this systems engineering framework, Module 01 functions strictly as the **"Requirements Discovery"** phase. In professional systems architecture, it is fundamentally irresponsible to design technological solutions without first mathematically and empirically quantifying the structural failures, legislative constraints, and demographic pressures of the target operational environment. Technology deployed without an accurate problem definition inevitably becomes an expensive liability (Technical Debt) rather than an asset.
 
 Consequently, every technical proposal advanced in Modules 02 through 09 is explicitly anchored in the problem space defined within this document. The IoT sensor networks, Digital Twin synchronization architectures, Just-In-Time (JIT) material delivery API concepts, and Physical AI safety protocols detailed in subsequent modules are not isolated theoretical exercises. They are calculated, direct engineering responses to the specific, measurable crises documented herein.
 
-> 本リポジトリの包括的なミッションは、「現場の真実（グラウンド・トゥルース）」（建設オペレーションの物理的現実）とデジタルアーキテクチャ（それらのオペレーションを最適化するために必要なデータ構造）の間に、構造的な架け橋を設計することでございます。
+> 本リポジトリの包括的なミッションは、「現場の真実（グラウンド・トゥルース：建設オペレーションの物理的現実）」と「デジタルアーキテクチャ（それらの運用を最適化するために必要なデータ構造）」の間に、構造的な架け橋を設計することでございます。
 > 
-> このシステムズエンジニアリングの枠組みにおいて、第01章は厳密に**「要件定義（Requirements Discovery）」**フェーズとして機能いたします。プロフェッショナルなシステムアーキテクチャにおいて、対象となる業務環境の構造的欠陥、法的制約、および人口動態的圧力を数学的かつ実証的に定量化することなく技術的解決策を設計することは、根本的に無責任な行為です。正確な問題定義なしに導入されたテクノロジーは、必然的に資産ではなく高価な負債となります。
+> このシステムズエンジニアリングの枠組みにおいて、第01章は厳密に**「要件定義（Requirements Discovery）」**フェーズとして機能いたします。プロフェッショナルなシステムアーキテクチャにおいて、対象となる業務環境の構造的欠陥、法的制約、および人口動態的圧力を数学的かつ実証的に定量化することなく技術的解決策を設計することは、工学的に著しく合理性を欠く行為です。正確な問題定義なしに導入されたテクノロジーは、資産としての価値を持たず、必然的に膨大な「技術的負債（Technical Debt）」と化してしまいます。
 > 
-> したがって、第02章から第09章で提案されるすべての技術的提案は、本書で定義された問題領域に明確に根ざしております。後続のモジュールで詳述されるIoTセンサーネットワーク、デジタルツインの同期アーキテクチャ、ジャスト・イン・タイム（JIT）資材搬入APIの概念、およびフィジカルAIの安全プロトコルは、孤立した理論的演習ではございません。それらは、本書で記録された特定かつ測定可能な危機に対する、計算された直接的なエンジニアリング対応でございます。
+> したがって、第02章から第09章で提案されるすべての技術的提案は、本書で定義された問題領域に明確に根ざしております。後続のモジュールで詳述されるIoTセンサーネットワーク、デジタルツインの同期アーキテクチャ、ジャスト・イン・タイム（JIT）資材搬入APIの概念、およびフィジカルAIの安全プロトコルは、決して孤立した理論的演習ではございません。これらはすべて、本書で記録された特定かつ測定可能な危機に対する、厳格に計算された工学的解決策（エンジニアリング・レスポンス）でございます。
 
+---
 ---
 
 ## 2. Theoretical Framework: The Throughput Crisis / 理論的枠組み：スループットの危機
