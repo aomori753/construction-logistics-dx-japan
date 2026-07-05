@@ -30,21 +30,20 @@ This documentation does not represent any government body, regulatory institutio
 
 ---
 
-## 🎯 1. Mission Alignment and Epistemological Foundation / リサーチミッションと認識論的基盤
+## 🎯 1. Mission Alignment and Epistemological Foundation / 
+リサーチミッションと認識論的基盤
 
-The overarching mission of this repository is to engineer a structural bridge between **"Ground Truth"** (the physical realities of construction operations) and **Digital Architecture** (the data structures required to optimize those operations).
+The overarching mission of this repository is to engineer a structural bridge between Ground Truth and Digital Architecture. Historically, a profound epistemological chasm has existed between civil engineering and software architecture. Enterprise software developers rarely comprehend the physical friction, spatial constraints, and stochastic volatility inherent to a high-density construction site. Conversely, traditional construction management relies heavily on high-latency human heuristics rather than deterministic computational frameworks. This repository explicitly dismantles that boundary. By defining Ground Truth as the measurable, kinematic reality of physical operations, we can translate heavy civil infrastructure into queryable, mathematically verifiable data structures.
 
-Within this systems engineering framework, Module 01 functions strictly as the **"Requirements Discovery"** phase. In professional systems architecture, it is fundamentally irresponsible to design technological solutions without first mathematically and empirically quantifying the structural failures, legislative constraints, and demographic pressures of the target operational environment. Technology deployed without an accurate problem definition inevitably becomes an expensive liability (Technical Debt) rather than an asset.
+Within this systems engineering framework, this initial module functions strictly as the formal Requirements Discovery phase. In professional enterprise architecture, it is fundamentally irresponsible to design technological solutions without first mathematically and empirically quantifying the structural failures, legislative constraints, and demographic pressures of the target operational environment. Designing software for an idealized construction site that does not exist inevitably transforms the resulting technology into an expensive liability rather than an operational asset. We must rigorously parameterize the system boundaries imposed by Japan's changing labor laws and supply chain bottlenecks before a single architectural diagram is drawn. 
 
-Consequently, every technical proposal advanced in Modules 02 through 09 is explicitly anchored in the problem space defined within this document. The IoT sensor networks, Digital Twin synchronization architectures, Just-In-Time (JIT) material delivery API concepts, and Physical AI safety protocols detailed in subsequent modules are not isolated theoretical exercises. They are calculated, direct engineering responses to the specific, measurable crises documented herein.
+Consequently, every technical proposition advanced in the subsequent modules of this repository is explicitly anchored in the problem space defined within this document. The sensor networks, state machine synchronizations, material delivery gateways, and cyber-physical safety protocols detailed in later chapters are not isolated theoretical exercises. They are calculated, direct engineering responses to the specific and measurable crises documented herein. Every digital mechanism engineered in this portfolio exists solely to resolve a physical, demographic, or regulatory failure point identified in this exact module.
 
-> 本リポジトリの包括的なミッションは、「現場の真実（グラウンド・トゥルース：建設オペレーションの物理的現実）」と「デジタルアーキテクチャ（それらの運用を最適化するために必要なデータ構造）」の間に、構造的な架け橋を設計することでございます。
+> 本リポジトリの包括的なミッションは、「現場の真実（グラウンド・トゥルース）」と「デジタルアーキテクチャ」の間に、構造的な架け橋を設計することでございます。歴史的に、土木工学とソフトウェアアーキテクチャの間には深い認識論的断絶が存在しておりました。エンタープライズ・ソフトウェアの開発者が、高密度の建設現場に内在する物理的摩擦、空間的制約、および確率論的ボラティリティを深く理解することは稀です。逆に、伝統的な施工管理は、決定論的な計算フレームワークではなく、遅延の大きい人間の経験則（ヒューリスティック）に大きく依存しております。本リポジトリは、この境界を明確に解体いたします。現場の真実を物理的運用の測定可能な運動学的現実として定義することにより、大規模土木インフラを、クエリ可能で数学的に検証可能なデータ構造へと変換することが可能となります。
 > 
-> このシステムズエンジニアリングの枠組みにおいて、第01章は厳密に**「要件定義（Requirements Discovery）」**フェーズとして機能いたします。プロフェッショナルなシステムアーキテクチャにおいて、対象となる業務環境の構造的欠陥、法的制約、および人口動態的圧力を数学的かつ実証的に定量化することなく技術的解決策を設計することは、工学的に著しく合理性を欠く行為です。正確な問題定義なしに導入されたテクノロジーは、資産としての価値を持たず、必然的に膨大な「技術的負債（Technical Debt）」と化してしまいます。
+> このシステムズエンジニアリングの枠組みにおいて、本初期モジュールは厳密に「要件定義（Requirements Discovery）」フェーズとして機能いたします。プロフェッショナルなエンタープライズアーキテクチャにおいて、対象となる業務環境の構造的欠陥、法的制約、および人口動態的圧力を数学的かつ実証的に定量化することなく技術的解決策を設計することは、工学的に著しく合理性を欠く行為です。現実には存在しない理想化された建設現場を想定してソフトウェアを設計すれば、その結果生み出されたテクノロジーは運用資産ではなく、必然的に膨大な技術的負債と化してしまいます。単一のアーキテクチャ図を描く前に、まずは日本の変化する労働法制やサプライチェーンのボトルネックがもたらすシステム境界条件を、極めて厳密にパラメータ化しなければなりません。
 > 
-> したがって、第02章から第09章で提案されるすべての技術的提案は、本書で定義された問題領域に明確に根ざしております。後続のモジュールで詳述されるIoTセンサーネットワーク、デジタルツインの同期アーキテクチャ、ジャスト・イン・タイム（JIT）資材搬入APIの概念、およびフィジカルAIの安全プロトコルは、決して孤立した理論的演習ではございません。これらはすべて、本書で記録された特定かつ測定可能な危機に対する、厳格に計算された工学的解決策（エンジニアリング・レスポンス）でございます。
-
----
+> したがって、本リポジトリの後続モジュールで提案されるすべての技術的提案は、本書で定義された問題領域に明確に根ざしております。後の章で詳述されるセンサーネットワーク、ステートマシンの同期、資材搬入ゲートウェイ、およびサイバーフィジカルの安全プロトコルは、決して孤立した理論的演習ではございません。これらはすべて、本書で記録された特定かつ測定可能な危機に対する、厳格に計算された工学的解決策（エンジニアリング・レスポンス）でございます。本ポートフォリオで設計されたすべてのデジタルメカニズムは、まさに本モジュールで特定された物理的、人口動態的、または規制上の障害ポイントを解決するためだけに存在しております。
 ---
 
 ## 2. Theoretical Framework: The Throughput Crisis / 理論的枠組み：スループットの危機
