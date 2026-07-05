@@ -62,7 +62,7 @@ The architectural necessity for technological intervention is driven by three im
 > 技術的介入を建築的に必要とする背景には、三つの不可侵なシステム境界が存在します。第一に、建設関係者の月45時間、および商用車ドライバーの年960時間という時間外労働上限の厳格な適用は、すべての運用計画を完全に規定します。この法改正は、これまで流動的であったスケジューリングの経験則（ヒューリスティック）を、硬直化したシステムアーキテクチャの課題へと根本的に変容させました。第二に、業界は深刻な人口動態の脆弱性と認識論的喪失（暗黙知の喪失）に直面しております。建設労働者の約36％が55歳以上を占める中、「施工管理技士」資格制度に組み込まれた高度に専門的な組織的専門知識は、新規学卒者や既存のソフトウェアシステムによって体系的に複製される速度を上回る速さで浸食されています。最後に、インフラストラクチャにおける深刻な相互運用性の欠如が挙げられます。物流フリートと現場ゲート管理システムとの間に、マシン・ツー・マシン（M2M）のAPI（アプリケーション・プログラミング・インターフェース）が依然として存在しないため、配送調整はほぼ完全にアナログで遅延の大きい人間同士のコミュニケーションに依存しております。アナログな同期に依存するアーキテクチャは本質的に拡張性がなく、2024年4月に導入された厳格な法的時間制約とは数学的に互換性がございません。
 
 ---
-## 📂 3. Module Roadmap and File Taxonomy / モジュール構成と文書分類
+## 3. Module Roadmap and File Taxonomy / モジュール構成と文書分類
 
 The four core documents comprising this module are engineered to be consumed sequentially. Each text builds upon the analytical foundation established by its predecessor, constructing a logical progression from legislative origin, through sectoral impact and systemic intersection, culminating in rigid policy mandates. Rather than a fragmented collection of industry observations, this directory serves as a cohesive requirements definition matrix. 
 
