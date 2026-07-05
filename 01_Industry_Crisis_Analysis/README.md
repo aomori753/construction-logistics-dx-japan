@@ -1,26 +1,27 @@
 <div align="center">
   <h1>Module 01: Industry Crisis Analysis</h1>
-  <h3>業界の危機分析：システムアーキテクチャのための「問題領域」の定義</h3>
+  <h3>業界の危機的状況分析：システムアーキテクチャにおける問題領域の厳密な定義</h3>
 </div>
 
 <br>
 
 > **Metadata:**
 > * **Module ID:** `MOD-01-CRISIS-ANALYSIS`
-> * **Status:** Active — Living Document / 運用中（継続的更新）
-> * **Author:** Jericho Ong / ジェリコ・オング (Construction & Logistics DX Independent Researcher)
-> * **Language:** English / Japanese (Advanced Technical Business Keigo / ビジネス技術最高敬語)
+> * **Status:** Active (Iterative Epistemological Baseline) / 運用中（反復的要件定義ベースライン）
+> * **Author:** Jericho Ong / ジェリコ・オング (Construction & Logistics DX Independent Researcher / 建設・物流DX 独立研究者)
+> * **Language:** English & Japanese (Advanced Technical & Academic Japanese / 専門的技術・学術日本語)
 
 ---
 
-> *"You cannot architect a solution to a problem you have not yet precisely defined. This module constitutes that precise definition."*
-> — **「問題を精確に定義することなく、解決策を設計することは不可能です。本モジュールは、その精確な定義そのものでございます。」**
+> *It is fundamentally impossible to architect a valid technological solution for an operational problem that has not been rigorously parameterized. This module establishes that exact empirical and structural definition.*
+> 
+> **「厳格にパラメータ化されていない運用上の課題に対し、有効な技術的解決策を設計することは根本的に不可能です。本モジュールは、その実証的かつ構造的な定義を確立するものでございます。」**
 
 ---
 
 ## 🏛️ Global Research and Policy Compliance Disclaimer / 全体的な研究およびコンプライアンスに関する免責事項
 
-This module represents an independent research and self-development framework authored by Jericho Ong, a construction operations professional actively transitioning into information technology architecture within Japan. All analyses draw exclusively from publicly available government publications, industry association reports, academic literature, and 13 years of direct operational field experience managing large-scale civil projects in the Philippines.
+This module represents an independent research and self-development framework authored by Jericho Ong, a construction operations professional actively transitioning into information technology architecture within Japan. All analyses draw exclusively from publicly available government publications, industry association reports, academic literature, and thirteen years of direct operational field experience managing large-scale civil projects in the Philippines.
 
 This documentation does not represent any government body, regulatory institution, or corporate employer in the Philippines or Japan. Furthermore, it does not constitute official legal, regulatory, structural engineering, or professional advice under the jurisdiction of either nation. All referenced statistics and policy details are synthesized from primary public sources and are intended strictly for educational discourse, portfolio development, and systems engineering research.
 
@@ -43,6 +44,7 @@ Consequently, every technical proposition advanced in the subsequent modules of 
 > このシステムズエンジニアリングの枠組みにおいて、本初期モジュールは厳密に「要件定義（Requirements Discovery）」フェーズとして機能いたします。プロフェッショナルなエンタープライズアーキテクチャにおいて、対象となる業務環境の構造的欠陥、法的制約、および人口動態的圧力を数学的かつ実証的に定量化することなく技術的解決策を設計することは、工学的に著しく合理性を欠く行為です。現実には存在しない理想化された建設現場を想定してソフトウェアを設計すれば、その結果生み出されたテクノロジーは運用資産ではなく、必然的に膨大な技術的負債と化してしまいます。単一のアーキテクチャ図を描く前に、まずは日本の変化する労働法制やサプライチェーンのボトルネックがもたらすシステム境界条件を、極めて厳密にパラメータ化しなければなりません。
 > 
 > したがって、本リポジトリの後続モジュールで提案されるすべての技術的提案は、本書で定義された問題領域に明確に根ざしております。後の章で詳述されるセンサーネットワーク、ステートマシンの同期、資材搬入ゲートウェイ、およびサイバーフィジカルの安全プロトコルは、決して孤立した理論的演習ではございません。これらはすべて、本書で記録された特定かつ測定可能な危機に対する、厳格に計算された工学的解決策（エンジニアリング・レスポンス）でございます。本ポートフォリオで設計されたすべてのデジタルメカニズムは、まさに本モジュールで特定された物理的、人口動態的、または規制上の障害ポイントを解決するためだけに存在しております。
+
 ---
 
 ## 2. Theoretical Framework: The Throughput Crisis / 理論的枠組み：スループットの危機
