@@ -19,7 +19,7 @@
 
 ---
 
-## 🌐 1. Theoretical Context / 理論的コンテキスト
+## 1. Theoretical Context / 理論的コンテキスト
 
 While Module 03 established the computational infrastructure—cloud topologies, application programming interfaces, and cyber-physical state machines—this module governs the absolute physical laws of the *Genba* (the construction site). Software architecture remains structurally invalid if it ignores the physical constraints of structural mass, diesel fuel combustion, crane hook cyclicality, human labor limits, and capital depreciation. 
 
@@ -31,7 +31,7 @@ This directory contains the core Operations Research framework. It models the Ja
 
 ---
 
-## 🗂️ 2. Architectural Index and File Taxonomy / アーキテクチャ構成と文書分類
+## 2. Architectural Index and File Taxonomy / アーキテクチャ構成と文書分類
 
 The five specifications contained within this directory execute a complete mathematical translation of physical site operations. They are engineered to be evaluated sequentially, moving from macro-network topology down to the psychological friction of the human operators.
 
@@ -47,7 +47,7 @@ The five specifications contained within this directory execute a complete mathe
 
 ---
 
-## 🏁 3. Strategic Conclusion / 戦略的結論
+## 3. Strategic Conclusion / 戦略的結論
 
 The fundamental objective of Module 04 is to parameterize the mathematical chaos of the physical construction site. By establishing rigid boundaries for material flow, equipment kinematics, and human labor constraints, we create the requisite operational geometry for the software architecture. Enterprise applications built without these parameters are structurally blind to physical realities. This module ensures that every digital framework proposed in Module 03 is explicitly grounded in the deterministic physics of the *Genba*.
 
